@@ -25,7 +25,7 @@
     fetch("graph.gexf")
       .then(res => res.text())
       .then(gexfString => {
-        const graph = graphologyGexf.parse(graphology, gexfString);
+        const graph = window.graphologyGexf.parse(window.graphology, gexfString);
         const renderer = new sigma.Sigma(graph, document.getElementById("container"));
       });
   </script>

@@ -16,32 +16,21 @@
 <body>
   <div id="container"></div>
 
-  <!-- Cargar librerías UMD desde CDN en orden -->
-  <script src="https://unpkg.com/graphology@0.25.4/dist/graphology.umd.min.js"></script>
-  <script src="https://unpkg.com/graphology-gexf@0.9.1/build/graphology-gexf.min.js"></script>
-  <script src="https://unpkg.com/sigma@2/build/sigma.min.js"></script>
+  <!-- Librerías desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/graphology@0.25.4/dist/graphology.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/graphology-gexf@0.8.1/build/graphology-gexf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sigma@2.4.0/build/sigma.min.js"></script>
 
   <script>
-    // Esperamos a que las librerías estén listas
-    document.addEventListener("DOMContentLoaded", function () {
-      try {
-        if (!window.graphologyGexf) {
-          throw new Error("graphologyGexf no está definido");
-        }
-
-        fetch("graph.gexf")
-          .then(res => res.text())
-          .then(gexfString => {
-            const graph = window.graphologyGexf.parse(window.graphology, gexfString);
-            const renderer = new window.sigma.Sigma(graph, document.getElementById("container"));
-          })
-          .catch(err => {
-            console.error("Error cargando el grafo:", err);
-          });
-      } catch (e) {
-        console.error("Error grave:", e);
-      }
-    });
+    fetch("graph.gexf")
+      .then(res => res.text())
+      .then(gexfString => {
+        const graph = graphologyGexf.parse(graphology, gexfString);
+        const renderer = new sigma.Sigma(graph, document.getElementById("container"));
+      })
+      .catch(err => {
+        console.error("Error cargando el grafo:", err);
+      });
   </script>
 </body>
 </html>

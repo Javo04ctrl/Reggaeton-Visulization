@@ -1,8 +1,8 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8" />
   <title>Red de Reggaetón</title>
   <style>
     html, body, #container {
@@ -16,29 +16,18 @@
 <body>
   <div id="container"></div>
 
-  <!-- Librerías UMD desde CDN (orden correcto) -->
-  <script src="https://unpkg.com/graphology@0.25.4/dist/graphology.umd.min.js"></script>
-  <script src="https://unpkg.com/graphology-gexf@0.9.1/build/graphology-gexf.min.js"></script>
-  <script src="https://unpkg.com/sigma@2/build/sigma.min.js"></script>
+  <script type="module">
+    import { Sigma } from "https://unpkg.com/sigma@2/build/sigma.es.js";
+    import { Graph } from "https://unpkg.com/graphology@0.25.4/dist/graphology.esm.min.js";
+    import gexf from "https://unpkg.com/graphology-gexf@0.9.1/graphology-gexf.esm.min.js";
 
-  <script>
-    // Esperamos a que todas las librerías se hayan cargado correctamente
-    document.addEventListener("DOMContentLoaded", function () {
-      if (!window.graphologyGexf || !window.graphology) {
-        alert("¡Error al cargar librerías! Revisa la consola.");
-        return;
-      }
-
-      fetch("graph.gexf")
-        .then(res => res.text())
-        .then(gexfString => {
-          const graph = window.graphologyGexf.parse(window.graphology, gexfString);
-          const renderer = new window.sigma.Sigma(graph, document.getElementById("container"));
-        })
-        .catch(error => {
-          console.error("Error cargando el archivo GEXF:", error);
-        });
-    });
+    fetch("graph.gexf")
+      .then(res => res.text())
+      .then(gexfString => {
+        const graph = gexf.parse(Graph, gexfString);
+        const renderer = new Sigma(graph, document.getElementById("container"));
+      });
   </script>
 </body>
 </html>
+

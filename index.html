@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Reggaetón Network</title>
+    <title>Red de Reggaetón</title>
     <style>
       html, body, #container {
         margin: 0;
@@ -14,6 +14,13 @@
   </head>
   <body>
     <div id="container"></div>
-    <script type="module" src="main.js"></script>
+
+    <!-- Librerías desde carpeta local "libs" -->
+    <script src="libs/graphology.umd.min.js"></script>
+    <script src="libs/graphology-gexf.js"></script>
+    <script src="libs/sigma.min.js"></script>
+
+    <!-- Script principal -->
+    <script src="main.js"></script>
   </body>
 </html>

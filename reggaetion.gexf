@@ -1,0 +1,3787 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<gexf xmlns="http://gexf.net/1.3" version="1.3" xmlns:viz="http://gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gexf.net/1.3 http://gexf.net/1.3/gexf.xsd">
+  <meta lastmodifieddate="2025-07-30">
+    <creator>Gephi 0.10.1</creator>
+    <title></title>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="type" title="type" type="string"/>
+      <attribute id="country" title="country" type="string"/>
+      <attribute id="debut_year" title="debut_year" type="integer"/>
+      <attribute id="labels" title="labels" type="string"/>
+      <attribute id="primary_genre" title="primary_genre" type="string"/>
+      <attribute id="gender_identity" title="gender_identity" type="string"/>
+      <attribute id="status" title="status" type="string"/>
+      <attribute id="degree" title="Degree" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <attributes class="edge" mode="static">
+      <attribute id="collaborations" title="collaborations" type="string"/>
+      <attribute id="year" title="year" type="string"/>
+    </attributes>
+    <nodes>
+      <node id="daddy_yankee" label="Daddy Yankee">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="1992"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="17"/>
+        </attvalues>
+        <viz:size value="44.0"/>
+        <viz:position x="-3.3875358" y="46.289143"/>
+        <viz:color r="30" g="134" b="80"/>
+      </node>
+      <node id="don_omar" label="Don Omar">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="1996"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="17"/>
+        </attvalues>
+        <viz:size value="44.0"/>
+        <viz:position x="-119.792564" y="81.26977"/>
+        <viz:color r="30" g="134" b="80"/>
+      </node>
+      <node id="wisin" label="Wisin">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="1998"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="14"/>
+        </attvalues>
+        <viz:size value="38.0"/>
+        <viz:position x="3.083179" y="209.09995"/>
+        <viz:color r="61" g="160" b="116"/>
+      </node>
+      <node id="yandel" label="Yandel">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="1998"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="10"/>
+        </attvalues>
+        <viz:size value="30.0"/>
+        <viz:position x="235.77751" y="72.07906"/>
+        <viz:color r="102" g="194" b="164"/>
+      </node>
+      <node id="wisin_and_yandel" label="Wisin &amp; Yandel">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="1998"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="11"/>
+        </attvalues>
+        <viz:size value="32.0"/>
+        <viz:position x="7.460969" y="-96.35087"/>
+        <viz:color r="91" g="185" b="151"/>
+      </node>
+      <node id="jowell" label="Jowell">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="2001"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="-783.74023" y="171.20674"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="randy_nota_loka" label="ba">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="2001"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="4"/>
+        </attvalues>
+        <viz:size value="18.0"/>
+        <viz:position x="-411.74234" y="76.313736"/>
+        <viz:color r="183" g="226" b="216"/>
+      </node>
+      <node id="jowell_and_randy" label="Jowell &amp; Randy">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="2001"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="-778.02576" y="15.358961"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="tego_calderon" label="Tego Calderón">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="1999"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="10"/>
+        </attvalues>
+        <viz:size value="30.0"/>
+        <viz:position x="-146.9345" y="-191.52426"/>
+        <viz:color r="102" g="194" b="164"/>
+      </node>
+      <node id="hector_el_father" label="Héctor &quot;El Father&quot;">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="1994"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="19"/>
+        </attvalues>
+        <viz:size value="48.0"/>
+        <viz:position x="124.71739" y="-4.9544997"/>
+        <viz:color r="10" g="117" b="56"/>
+      </node>
+      <node id="tito_el_bambino" label="Tito &quot;El Bambino&quot;">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="1996"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="4"/>
+        </attvalues>
+        <viz:size value="18.0"/>
+        <viz:position x="471.63696" y="-105.978065"/>
+        <viz:color r="183" g="226" b="216"/>
+      </node>
+      <node id="hector_and_tito" label="Héctor &amp; Tito">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="1996"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="618.72766" y="-93.4886"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="nicky_jam" label="Nicky Jam">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="1997"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="6"/>
+        </attvalues>
+        <viz:size value="22.0"/>
+        <viz:position x="147.15941" y="-320.9292"/>
+        <viz:color r="156" g="215" b="198"/>
+      </node>
+      <node id="zion" label="Zion">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="5"/>
+        </attvalues>
+        <viz:size value="20.0"/>
+        <viz:position x="354.76077" y="4.9249096"/>
+        <viz:color r="169" g="221" b="207"/>
+      </node>
+      <node id="lennox" label="Lennox">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="741.56433" y="-201.81833"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="zion_and_lennox" label="Zion &amp; Lennox">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="4"/>
+        </attvalues>
+        <viz:size value="18.0"/>
+        <viz:position x="23.277315" y="-385.26608"/>
+        <viz:color r="183" g="226" b="216"/>
+      </node>
+      <node id="eddie_dee" label="Eddie Dee">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="3"/>
+        </attvalues>
+        <viz:size value="16.0"/>
+        <viz:position x="-393.99814" y="-213.18991"/>
+        <viz:color r="196" g="231" b="224"/>
+      </node>
+      <node id="arcangel" label="Arcángel">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="2005"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="3"/>
+        </attvalues>
+        <viz:size value="16.0"/>
+        <viz:position x="448.62546" y="274.70996"/>
+        <viz:color r="196" g="231" b="224"/>
+      </node>
+      <node id="tony_dize" label="Tony Dize">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="-193.97733" y="739.41785"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="alex_gargolas" label="Alex Gargolas">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="-256.1079" y="-447.45483"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="plan_b" label="Plan B">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="11"/>
+        </attvalues>
+        <viz:size value="32.0"/>
+        <viz:position x="276.48163" y="-261.58215"/>
+        <viz:color r="91" g="185" b="151"/>
+      </node>
+      <node id="chencho_corleone" label="Chencho Corleone">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="304.86087" y="-698.15295"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="maldy" label="Maldy">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="437.52502" y="-657.07104"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="alexis_y_fido" label="Alexis y Fido">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="5"/>
+        </attvalues>
+        <viz:size value="20.0"/>
+        <viz:position x="499.5608" y="28.124453"/>
+        <viz:color r="169" g="221" b="207"/>
+      </node>
+      <node id="alexis" label="Alexis">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="3"/>
+        </attvalues>
+        <viz:size value="16.0"/>
+        <viz:position x="653.6872" y="47.416153"/>
+        <viz:color r="196" g="231" b="224"/>
+      </node>
+      <node id="fido" label="Fido">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="3"/>
+        </attvalues>
+        <viz:size value="16.0"/>
+        <viz:position x="705.7195" y="193.98073"/>
+        <viz:color r="196" g="231" b="224"/>
+      </node>
+      <node id="angel_y_khriz" label="Angel y Khriz">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-795.4438" y="336.50732"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="julio_voltio" label="Julio Voltio">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="1994"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="5"/>
+        </attvalues>
+        <viz:size value="20.0"/>
+        <viz:position x="322.89594" y="348.13187"/>
+        <viz:color r="169" g="221" b="207"/>
+      </node>
+      <node id="divino" label="Divino">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="-266.4501" y="-299.542"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="trebol_clan" label="Trébol Clan">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="35.703274" y="649.6831"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="jomar_el_caballo_negro" label="Jomar &quot;El Caballo Negro&quot;">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="3"/>
+        </attvalues>
+        <viz:size value="16.0"/>
+        <viz:position x="367.84537" y="497.78998"/>
+        <viz:color r="196" g="231" b="224"/>
+      </node>
+      <node id="r.k.m_and_ken-y" label="R.K.M &amp; Ken-Y">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="3"/>
+        </attvalues>
+        <viz:size value="16.0"/>
+        <viz:position x="552.2462" y="155.47755"/>
+        <viz:color r="196" g="231" b="224"/>
+      </node>
+      <node id="baby_rasta_y_gringo" label="Baby Rasta y Gringo">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="3"/>
+        </attvalues>
+        <viz:size value="16.0"/>
+        <viz:position x="-486.46384" y="472.51086"/>
+        <viz:color r="196" g="231" b="224"/>
+      </node>
+      <node id="baby_rasta" label="Baby Rasta">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="-781.38403" y="483.7084"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="gringo" label="Gringo">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="-715.483" y="610.3336"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="yomo" label="Yomo">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="2004"/>
+          <attvalue for="primary_genre" value="Reggaeton"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="6"/>
+        </attvalues>
+        <viz:size value="22.0"/>
+        <viz:position x="115.80353" y="-189.16826"/>
+        <viz:color r="156" g="215" b="198"/>
+      </node>
+      <node id="polakan" label="Polakan">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="5"/>
+        </attvalues>
+        <viz:size value="20.0"/>
+        <viz:position x="-273.92142" y="-133.61295"/>
+        <viz:color r="169" g="221" b="207"/>
+      </node>
+      <node id="lito_and_polaco" label="Lito &amp; Polaco">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="-656.3652" y="-63.01879"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="de_la_ghetto" label="De La Ghetto">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="gender_identity" value="M"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-904.487" y="555.8178"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="vico_c" label="Vico C">
+        <attvalues>
+          <attvalue for="type" value="Rapper"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="3"/>
+        </attvalues>
+        <viz:size value="16.0"/>
+        <viz:position x="-155.309" y="467.25555"/>
+        <viz:color r="196" g="231" b="224"/>
+      </node>
+      <node id="gallego" label="Gallego">
+        <attvalues>
+          <attvalue for="type" value="Rapper"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="393.02997" y="146.79826"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="ivy_queen" label="Ivy Queen">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="-90.701294" y="-618.11053"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="wiso_g" label="Wiso G">
+        <attvalues>
+          <attvalue for="type" value="Rapper"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-470.18176" y="803.8697"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="johnny_prez" label="Johnny Prez">
+        <attvalues>
+          <attvalue for="type" value="Rapper"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-477.47504" y="950.7484"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="franco_el_gorilla" label="Franco &quot;El Gorilla&quot;">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="2005"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-1162.5161" y="-244.61998"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="yaviah" label="Yaviah">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="-84.58522" y="351.14932"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="algarete" label="Algarete">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="3"/>
+        </attvalues>
+        <viz:size value="16.0"/>
+        <viz:position x="512.4871" y="554.25226"/>
+        <viz:color r="196" g="231" b="224"/>
+      </node>
+      <node id="john_eric" label="John Eric">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-333.8839" y="861.9934"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="nengo_flow" label="Ñengo Flow">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="U.S.A"/>
+          <attvalue for="debut_year" value="2004"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="210.64139" y="433.43332"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="romeo_santos" label="Romeo Santos">
+        <attvalues>
+          <attvalue for="type" value="Bachata Singer/Group"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="-545.99854" y="25.360245"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="wise_the_gold_pen" label="Wise (The Gold Pen)">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist Songwriter"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="1131.8917" y="372.95126"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="nejo_y_dalmata" label="Ñejo y Dalmata">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="-343.23846" y="-834.1178"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="nejo" label="Ñejo">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="-342.36444" y="-978.6085"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="dalmata" label="Dalmata">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="-210.62453" y="-749.331"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="magnate_and_valentino" label="Magnate &amp; Valentino">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="1034.167" y="-588.7522"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="magnate" label="Magnate">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-68.06021" y="-917.94904"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="valentino" label="Valentino">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-768.44275" y="-467.4832"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="naldo" label="Naldo">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="595.9699" y="-230.78786"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="casa_de_leones" label="Casa de Leones">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-196.48134" y="890.1685"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="karol_g" label="Karol G">
+        <attvalues>
+          <attvalue for="type" value="Urban Pop"/>
+          <attvalue for="country" value="Colombia"/>
+          <attvalue for="debut_year" value="2013"/>
+          <attvalue for="degree" value="11"/>
+        </attvalues>
+        <viz:size value="32.0"/>
+        <viz:position x="-137.99896" y="-56.37422"/>
+        <viz:color r="91" g="185" b="151"/>
+      </node>
+      <node id="anuel_aa" label="Anuel AA">
+        <attvalues>
+          <attvalue for="type" value="Trap Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="2010"/>
+          <attvalue for="degree" value="9"/>
+        </attvalues>
+        <viz:size value="28.0"/>
+        <viz:position x="-130.77454" y="214.78986"/>
+        <viz:color r="115" g="199" b="172"/>
+      </node>
+      <node id="myke_towers" label="Myke Towers">
+        <attvalues>
+          <attvalue for="type" value="Urban Pop"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="2015"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="556.91797" y="-367.75177"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="bad_bunny" label="Bad Bunny">
+        <attvalues>
+          <attvalue for="type" value="Urban Pop"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="2015"/>
+          <attvalue for="degree" value="20"/>
+        </attvalues>
+        <viz:size value="50.0"/>
+        <viz:position x="216.72313" y="-90.932175"/>
+        <viz:color r="0" g="109" b="44"/>
+      </node>
+      <node id="rauw_alejandro" label="Rauw Alejandro">
+        <attvalues>
+          <attvalue for="type" value="Urban Pop"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="-525.0372" y="185.08188"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="feid" label="Feid">
+        <attvalues>
+          <attvalue for="type" value="Urban Pop"/>
+          <attvalue for="country" value="Colombia"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="-259.76163" y="157.67789"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="j_alvarez" label="J Alvarez">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="311.1422" y="-1151.8751"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="maluma" label="Maluma">
+        <attvalues>
+          <attvalue for="type" value="Urban Pop"/>
+          <attvalue for="country" value="Colombia"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="180.15614" y="-761.4199"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="farruko" label="Farruko">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="4"/>
+        </attvalues>
+        <viz:size value="18.0"/>
+        <viz:position x="163.35724" y="296.56256"/>
+        <viz:color r="183" g="226" b="216"/>
+      </node>
+      <node id="jory_boy" label="Jory Boy">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="-388.1148" y="-364.2576"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="nova_y_joey" label="Nova y Joey">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="56.70315" y="-847.46796"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="gotay_el_autentijo" label="Gotay &quot;El Autentiko&quot;">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="612.57184" y="849.8566"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="justin_quiles" label="Justin Quiles">
+        <attvalues>
+          <attvalue for="type" value="Urban Pop"/>
+          <attvalue for="country" value="U.S.A"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="909.5231" y="761.94165"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="bryant_myers" label="Bryant Myers">
+        <attvalues>
+          <attvalue for="type" value="Trap Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="2015"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="-69.664894" y="-768.7417"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="almighty" label="Almighty">
+        <attvalues>
+          <attvalue for="type" value="Trap Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="50.6984" y="-685.14716"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="j_balvin" label="J Balvin">
+        <attvalues>
+          <attvalue for="type" value="Urban Pop"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="403.61877" y="-380.86288"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="cosculluela" label="Cosculluela">
+        <attvalues>
+          <attvalue for="type" value="Rapper"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="-394.49838" y="348.15347"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="fuego" label="Fuego">
+        <attvalues>
+          <attvalue for="type" value="Merengue"/>
+          <attvalue for="country" value="U.S.A"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-737.91516" y="940.33276"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="lucenzo" label="Lucenzo">
+        <attvalues>
+          <attvalue for="type" value="Kuduro"/>
+          <attvalue for="country" value="France"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="-100.32205" y="609.6306"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="tommy_viera" label="Tommy Viera">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="844.8972" y="-848.8938"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="wibal_and_alex" label="Wibal &amp; Alex">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="302.5915" y="1155.2552"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="notty" label="Notty">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="1191.6631" y="83.66993"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="yaga_and_mackie" label="Yaga &amp; Mackie">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="17.882988" y="-1181.0374"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="kartier" label="Kartiel">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="413.4129" y="650.45404"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="tainy" label="Tainy">
+        <attvalues>
+          <attvalue for="type" value="Producer"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="6"/>
+        </attvalues>
+        <viz:size value="22.0"/>
+        <viz:position x="-12.212929" y="-246.13129"/>
+        <viz:color r="156" g="215" b="198"/>
+      </node>
+      <node id="luny_tunes" label="Luny Tunes">
+        <attvalues>
+          <attvalue for="type" value="Producer"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="8"/>
+        </attvalues>
+        <viz:size value="26.0"/>
+        <viz:position x="-125.91902" y="-328.34525"/>
+        <viz:color r="129" g="204" b="181"/>
+      </node>
+      <node id="dj_blass" label="DJ Blass">
+        <attvalues>
+          <attvalue for="type" value="Producer"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-912.4263" y="84.30643"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="eliel" label="Eliel">
+        <attvalues>
+          <attvalue for="type" value="Producer"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="154.81175" y="-1184.9492"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="jenny_la_sexy_voz" label="Jenny &quot;La Sexy Voz&quot;">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="12"/>
+        </attvalues>
+        <viz:size value="34.0"/>
+        <viz:position x="51.53843" y="363.77933"/>
+        <viz:color r="81" g="177" b="140"/>
+      </node>
+      <node id="endo_y_lele" label="Endo y Lele">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="2008"/>
+          <attvalue for="degree" value="4"/>
+        </attvalues>
+        <viz:size value="18.0"/>
+        <viz:position x="-238.55768" y="599.0718"/>
+        <viz:color r="183" g="226" b="216"/>
+      </node>
+      <node id="lele_el_arma_secreta" label="Lele &quot;EL Arma Secreta&quot;">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="2003"/>
+          <attvalue for="degree" value="6"/>
+        </attvalues>
+        <viz:size value="22.0"/>
+        <viz:position x="-238.27492" y="316.9708"/>
+        <viz:color r="156" g="215" b="198"/>
+      </node>
+      <node id="endo" label="Endo">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="2008"/>
+          <attvalue for="degree" value="3"/>
+        </attvalues>
+        <viz:size value="16.0"/>
+        <viz:position x="-376.593" y="564.9135"/>
+        <viz:color r="196" g="231" b="224"/>
+      </node>
+      <node id="kendo_kaponi" label="Kendo Kaponi">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="-538.7436" y="336.38693"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="alex_kyza" label="Alex Kyza">
+        <attvalues>
+          <attvalue for="type" value="Trap Artist"/>
+          <attvalue for="country" value="U.S.A"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-1154.864" y="310.1957"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="snoop_dogg" label="Snoop Dogg">
+        <attvalues>
+          <attvalue for="type" value="Rapper"/>
+          <attvalue for="country" value="U.S.A"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-74.32503" y="1055.8701"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="dj_nelson" label="DJ Nelson">
+        <attvalues>
+          <attvalue for="type" value="Producer"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="-300.83417" y="445.09802"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="hebreo" label="Hebreo">
+        <attvalues>
+          <attvalue for="type" value="Producer"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="1139.4603" y="-330.44977"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="lyan" label="Lyan">
+        <attvalues>
+          <attvalue for="type" value="Trap Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-318.1473" y="1150.021"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="mishelle_master_boys" label="Mishelle Master Boys">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Colombia"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="892.5049" y="-575.9414"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="alexio_la_bruja" label="Alexio &quot;La Bruja&quot;">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="2010"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="-494.72418" y="-466.5539"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="jhayco" label="JHAYCO">
+        <attvalues>
+          <attvalue for="type" value="Urban Pop"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="185.18661" y="-606.6148"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="omega" label="Omega">
+        <attvalues>
+          <attvalue for="type" value="Merengue"/>
+          <attvalue for="country" value="Dominican Republic"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-603.96216" y="876.7515"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="izaak" label="IZaak">
+        <attvalues>
+          <attvalue for="type" value="Trap Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-850.6799" y="-669.6065"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="ms_nina" label="Ms Nina">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Argentina"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="927.8877" y="104.87754"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="pablo_chill-e" label="Pablo Chill-E">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Chile"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="338.54547" y="-552.8415"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="spiff_tv" label="Spiff TV">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="U.S.A"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="314.42493" y="-851.8879"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="chris_jedi" label="Chris Jedi">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-1180.5583" y="-105.984116"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="urba" label="Urba">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="-404.2746" y="-59.14727"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="aventura" label="Aventura">
+        <attvalues>
+          <attvalue for="type" value="Bachata Singer/Group"/>
+          <attvalue for="country" value="Dominican Republic"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="-527.86884" y="-134.83116"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="urba_and_rome" label="Urba &amp; Rome">
+        <attvalues>
+          <attvalue for="type" value="Producer"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="-224.86209" y="-594.4023"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="mariah_angeliq" label="Mariah Angeliq">
+        <attvalues>
+          <attvalue for="type" value="Urban Pop"/>
+          <attvalue for="country" value="U.S.A"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-346.0199" y="1005.2242"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="guaynaa" label="Guaynaa">
+        <attvalues>
+          <attvalue for="type" value="Urban Pop"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-863.12054" y="831.4417"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="dj_luian" label="DJ Luian">
+        <attvalues>
+          <attvalue for="type" value="Producer"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="709.0766" y="-796.1592"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="mambo_kingz" label="Mambo Kingz">
+        <attvalues>
+          <attvalue for="type" value="Producer"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-210.37941" y="1033.096"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="victor_manuelle" label="Victor Manuelle">
+        <attvalues>
+          <attvalue for="type" value="Salsa"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="3"/>
+        </attvalues>
+        <viz:size value="16.0"/>
+        <viz:position x="28.836641" y="-532.0066"/>
+        <viz:color r="196" g="231" b="224"/>
+      </node>
+      <node id="los_legendarios" label="Los Legendarios">
+        <attvalues>
+          <attvalue for="type" value="Producer"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-900.3467" y="-64.6354"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="nio_garcia" label="Nio Garcia">
+        <attvalues>
+          <attvalue for="type" value="Urban Pop"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="8"/>
+        </attvalues>
+        <viz:size value="26.0"/>
+        <viz:position x="333.72955" y="-145.29439"/>
+        <viz:color r="129" g="204" b="181"/>
+      </node>
+      <node id="ozuna" label="Ozuna">
+        <attvalues>
+          <attvalue for="type" value="Urban Pop"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="3"/>
+        </attvalues>
+        <viz:size value="16.0"/>
+        <viz:position x="-268.047" y="15.251386"/>
+        <viz:color r="196" g="231" b="224"/>
+      </node>
+      <node id="revol" label="Revol">
+        <attvalues>
+          <attvalue for="type" value="Producer"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-731.2952" y="-608.1894"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="julieta_venegas" label="Julieta Venegas">
+        <attvalues>
+          <attvalue for="type" value="Pop"/>
+          <attvalue for="country" value="Mexico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-474.926" y="-781.3224"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="6ix9ine" label="6ix9ine">
+        <attvalues>
+          <attvalue for="type" value="Trap Artist"/>
+          <attvalue for="country" value="U.S.A"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="710.315" y="-349.33716"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="pitbull" label="Pitbull">
+        <attvalues>
+          <attvalue for="type" value="Pop"/>
+          <attvalue for="country" value="U.S.A"/>
+          <attvalue for="degree" value="3"/>
+        </attvalues>
+        <viz:size value="16.0"/>
+        <viz:position x="450.4472" y="-252.85579"/>
+        <viz:color r="196" g="231" b="224"/>
+      </node>
+      <node id="don_miguelo" label="Don Miguelo">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Dominican Republic"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="847.2736" y="-333.05896"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="pailita" label="Pailita">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Chile"/>
+          <attvalue for="degree" value="3"/>
+        </attvalues>
+        <viz:size value="16.0"/>
+        <viz:position x="649.07794" y="-484.63416"/>
+        <viz:color r="196" g="231" b="224"/>
+      </node>
+      <node id="noriel" label="Noriel">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="570.1007" y="-611.98444"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="el_jordan_23" label="El Jordan 23">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Chile"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="886.26276" y="-195.61841"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="cris_mj" label="Cris MJ">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Chile"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="711.4775" y="949.8352"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="simon_la_letra" label="Simon La Letra">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Chile"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-898.06683" y="-532.7391"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="marcianeke" label="Marcianeke">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Chile"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="915.49164" y="532.72156"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="blin_blin_music" label="Blin Blin Music">
+        <attvalues>
+          <attvalue for="type" value="Company"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="-1131.0985" y="-390.83432"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="jiggiri_records" label="Jiggiri Records">
+        <attvalues>
+          <attvalue for="type" value="Company"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="-369.42706" y="-533.9654"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="white_lion" label="White Lion">
+        <attvalues>
+          <attvalue for="type" value="Company"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="1184.9564" y="-61.01425"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="wy_records" label="WY Records">
+        <attvalues>
+          <attvalue for="type" value="Company"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="3"/>
+        </attvalues>
+        <viz:size value="16.0"/>
+        <viz:position x="-4.6761007" y="494.64114"/>
+        <viz:color r="196" g="231" b="224"/>
+      </node>
+      <node id="el_orfanato" label="El Orfanato">
+        <attvalues>
+          <attvalue for="type" value="Company"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="796.5677" y="-479.9173"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="calle_13" label="Calle 13">
+        <attvalues>
+          <attvalue for="type" value="Latin Hip Hop"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="2005"/>
+          <attvalue for="degree" value="3"/>
+        </attvalues>
+        <viz:size value="16.0"/>
+        <viz:position x="181.7421" y="695.1839"/>
+        <viz:color r="196" g="231" b="224"/>
+      </node>
+      <node id="residente" label="Residente">
+        <attvalues>
+          <attvalue for="type" value="Latin Hip Hop"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="debut_year" value="2005"/>
+          <attvalue for="degree" value="3"/>
+        </attvalues>
+        <viz:size value="16.0"/>
+        <viz:position x="127.66038" y="157.71786"/>
+        <viz:color r="196" g="231" b="224"/>
+      </node>
+      <node id="tempo" label="Tempo">
+        <attvalues>
+          <attvalue for="type" value="Latin Hip Hop"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-1035.6919" y="-130.34877"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="el_general" label="El General">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Panama"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="861.8702" y="379.04477"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="el_chombo" label="El Chombo">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Panama"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="277.08493" y="-419.3419"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="la_factoria" label="La Factoría">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="-60.833828" y="767.94336"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="omar_courtz" label="Omar Courtz">
+        <attvalues>
+          <attvalue for="type" value="Urban Pop"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-1175.3921" y="168.15312"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="dei_v" label="Dei V">
+        <attvalues>
+          <attvalue for="type" value="Urban Pop"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-478.224" y="-931.17444"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="alvaro_diaz" label="Alvaro Diaz">
+        <attvalues>
+          <attvalue for="type" value="Urban Pop"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-607.5289" y="-705.81165"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="young_miko" label="Young Miko">
+        <attvalues>
+          <attvalue for="type" value="Urban Pop"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="714.3668" y="-619.5053"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="sech" label="Sech">
+        <attvalues>
+          <attvalue for="type" value="Urban Pop"/>
+          <attvalue for="country" value="Panama"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="480.40692" y="-497.465"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="arca" label="Arca">
+        <attvalues>
+          <attvalue for="type" value="Producer"/>
+          <attvalue for="country" value="Venezuela"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-532.1194" y="-1061.974"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="the_marias" label="The Marías">
+        <attvalues>
+          <attvalue for="type" value="Pop"/>
+          <attvalue for="country" value="U.S.A"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-594.90295" y="554.92474"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="kany_garcia" label="Kany García">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-608.6746" y="721.26746"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="e_vax" label="E.VAX">
+        <attvalues>
+          <attvalue for="country" value="U.S.A"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="672.1403" y="602.8892"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="mora" label="Mora">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-405.30612" y="-1110.1373"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="kris_floyd" label="Kris Floyd">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-996.1076" y="-423.91122"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="judeline" label="Judeline">
+        <attvalues>
+          <attvalue for="country" value="Spain"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="60.57215" y="-1013.21216"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="xantos" label="Xantos">
+        <attvalues>
+          <attvalue for="country" value="Dominican Republic"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="581.49194" y="-747.79565"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="rbd" label="RBD">
+        <attvalues>
+          <attvalue for="country" value="Mexico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="996.95404" y="261.93103"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="angel_doze" label="Angel Doze">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="-336.44815" y="716.5972"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="baby_ranks" label="Baby Ranks">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="-342.96243" y="-682.49976"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="noriega" label="Noriega">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-987.86835" y="-671.2067"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="guanabanas" label="Guanabanas">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="83.14679" y="944.82495"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="darkiel" label="Darkiel">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-169.5306" y="1178.9098"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="messiah" label="Messiah">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-1093.3481" y="446.39642"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="anonimus" label="Anonimus">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-209.01097" y="-1033.8503"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="benny_benni" label="Benny Benni">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-1043.0509" y="570.99146"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="mario_vi" label="Mario VI">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-733.6455" y="-771.1921"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="alberto_stylee" label="Alberto Stylee">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="-659.4773" y="260.10138"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="maicol_y_manuel" label="Maicol y Manuel">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-879.4335" y="-359.87842"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="felo_man" label="Felo Man">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="156.65889" y="1184.712"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="o_g_black" label="O.G Black">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="1050.6349" y="-10.503654"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="don_chezina" label="Don Chezina">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-483.7522" y="-631.59143"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="rey_pirin" label="Rey Pirín">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="191.8028" y="-1056.4529"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="mexicano_777" label="Mexicano 777">
+        <attvalues>
+          <attvalue for="type" value="Rapper"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="3"/>
+        </attvalues>
+        <viz:size value="16.0"/>
+        <viz:position x="73.91929" y="797.8771"/>
+        <viz:color r="196" g="231" b="224"/>
+      </node>
+      <node id="pacho_el_antifeka" label="Pacho &quot;El Antifeka&quot;">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="587.0853" y="-894.10443"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="cirilo" label="Cirilo">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-1037.6187" y="160.74287"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="pacho_y_cirilo" label="Pacho y Cirilo">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="722.5335" y="-950.1482"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="karel" label="Karel">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="349.7596" y="888.22534"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="maestro" label="Maestro">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-660.2727" y="419.19708"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="nina_sky" label="Nina Sky">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-652.2243" y="-992.3046"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="n_o_r_e" label="N.O.R.E">
+        <attvalues>
+          <attvalue for="country" value="U.S.A"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="814.7292" y="860.32996"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="gemstar" label="Gemstar">
+        <attvalues>
+          <attvalue for="country" value="U.S.A"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="595.87946" y="1031.0717"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="big_mato" label="Big Mato">
+        <attvalues>
+          <attvalue for="country" value="U.S.A"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="589.4604" y="-1039.0057"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="luis_fonsi" label="Luis Fonsi">
+        <attvalues>
+          <attvalue for="type" value="Latin Pop"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="1164.209" y="236.91182"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="yailin_la_mas_viral" label="Yailin la mas Viral">
+        <attvalues>
+          <attvalue for="type" value="Dominican Dembow"/>
+          <attvalue for="country" value="Dominican Republic"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-1019.8416" y="-273.34625"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="yovngchimi" label="YOVNGCHIMI">
+        <attvalues>
+          <attvalue for="type" value="Trap Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="995.3587" y="650.5743"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="robgz" label="RobGZ">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-607.22284" y="-858.3773"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="raphy_pina" label="Raphy Pina">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="849.8893" y="236.5364"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="pina_records" label="Pina Records">
+        <attvalues>
+          <attvalue for="type" value="Company"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="4"/>
+        </attvalues>
+        <viz:size value="18.0"/>
+        <viz:position x="626.3237" y="453.67017"/>
+        <viz:color r="183" g="226" b="216"/>
+      </node>
+      <node id="ariel_el_puro" label="Ariel &quot;El Puro&quot;">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="767.7515" y="-61.863968"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="ednita_nazario" label="Ednita Nazario">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-928.7023" y="418.3463"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="rosalia" label="Rosalía">
+        <attvalues>
+          <attvalue for="country" value="Spain"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="792.56116" y="76.885216"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="big_yamo" label="Big Yamo">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-1185.0713" y="31.00324"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="oscar_d_leon" label="Oscar D'León">
+        <attvalues>
+          <attvalue for="type" value="Salsa Artist"/>
+          <attvalue for="country" value="Venezuela"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="-755.4694" y="-152.51149"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="jamsha" label="Jamsha">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="183.72955" y="-912.81464"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="dani_flow" label="Dani Flow">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Mexa"/>
+          <attvalue for="country" value="Mexico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-606.7009" y="1028.0442"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="yeri_mua" label="Yeri Mua">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Mexa"/>
+          <attvalue for="country" value="Mexico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-205.44629" y="-890.5398"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="bellakath" label="Bellakath">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Mexa"/>
+          <attvalue for="country" value="Mexico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="462.39963" y="1102.9512"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="jerry_rivera" label="Jerry Rivera">
+        <attvalues>
+          <attvalue for="type" value="Salsa Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="952.37604" y="-438.06354"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="gilberto_santa_rosa" label="Gilberto Santa Rosa">
+        <attvalues>
+          <attvalue for="type" value="Salsa Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-68.53369" y="-1061.3097"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="lil_jon" label="Lil Jon">
+        <attvalues>
+          <attvalue for="type" value="Rapper"/>
+          <attvalue for="country" value="U.S.A"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="266.9216" y="584.7305"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="nile_rodgers" label="Nile Rodgers">
+        <attvalues>
+          <attvalue for="type" value="Guitar Player"/>
+          <attvalue for="country" value="U.S.A"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="-388.40082" y="218.77324"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="glory" label="Glory">
+        <attvalues>
+          <attvalue for="type" value="Reggaeton Artist"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-967.8766" y="703.4525"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="dj_joe" label="DJ Joe">
+        <attvalues>
+          <attvalue for="type" value="Producer"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="821.30237" y="649.56256"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="dj_playero" label="DJ Playero">
+        <attvalues>
+          <attvalue for="type" value="Producer"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="1031.815" y="-156.03424"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="falo" label="Falo">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-1019.44617" y="313.63123"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="big_boy" label="Big Boy">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-830.0452" y="682.5212"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="the_noise" label="The Noise">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="210.345" y="1026.4932"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="gocho" label="Gocho">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="481.3436" y="413.11575"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="luigi_21_plus" label="Luigi 21 Plus">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="1001.3623" y="-299.16226"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="mueka" label="Mueka">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-768.8391" y="-908.7032"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="syko" label="Syko">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="1093.4708" y="-459.8768"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="a_and_x" label="A &amp; X">
+        <attvalues>
+          <attvalue for="country" value="U.S.A"/>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="124.912125" y="539.665"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="danny_fornaris" label="Danny Fornaris">
+        <attvalues>
+          <attvalue for="type" value="Producer"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="351.21783" y="1022.13654"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="guelo_star" label="Guelo Star">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-756.737" y="-308.22638"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="pusho" label="Pusho">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-890.50916" y="-206.95662"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="sica" label="Sica">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="446.1299" y="-806.32104"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="juanka_el_problematik" label="Juanka &quot;El Problematik&quot;">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-466.59677" y="1099.6521"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="brytiago" label="Brytiago">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-728.2247" y="790.82904"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="kafubanton" label="KafuBanton">
+        <attvalues>
+          <attvalue for="country" value="Panama"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="313.14722" y="752.1197"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="mozart_la_para" label="Mozart &quot;La Para&quot;">
+        <attvalues>
+          <attvalue for="country" value="Dominican Republic"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-484.17487" y="658.1046"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="secreto" label="Secreto">
+        <attvalues>
+          <attvalue for="country" value="Dominican Republic"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="468.78156" y="793.64124"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="gente_de_zona" label="Gente de Zona">
+        <attvalues>
+          <attvalue for="country" value="Cuba"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-637.0939" y="-400.7405"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="cardi_b" label="Cardi B">
+        <attvalues>
+          <attvalue for="country" value="U.S.A"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="325.1777" y="-1000.7437"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="pedro_capo" label="Pedro Capó">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-611.15234" y="-546.42737"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="luar_la_l" label="Luar La L">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="67.50703" y="1082.3826"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="natti_natasha" label="NATTI NATASHA">
+        <attvalues>
+          <attvalue for="country" value="Domincan Republic"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="773.691" y="501.96432"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="becky_g" label="Becky G">
+        <attvalues>
+          <attvalue for="country" value="U.S.A"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="956.06604" y="-721.55914"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="juan_magan" label="Juan Magán">
+        <attvalues>
+          <attvalue for="country" value="Spain"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="492.0559" y="941.122"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="beenie_man" label="Beenie Man">
+        <attvalues>
+          <attvalue for="country" value="Jamaica"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="-516.2225" y="-302.3755"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="damian_marley" label="Damian Marley">
+        <attvalues>
+          <attvalue for="country" value="Jamaica"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-903.72565" y="242.14655"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="d_enyel" label="D-Enyel">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="-657.4474" y="111.91756"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="pichy_boy_y_skaary" label="Pichy Boy &amp; Skaary">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="996.4203" y="402.99667"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="k_mil" label="K-mil">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="455.93005" y="-953.0643"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="andy_montanez" label="Andy Montañez">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="1060.86" y="136.46318"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="nando_boom" label="Nando Boom">
+        <attvalues>
+          <attvalue for="country" value="Panama"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="1168.626" y="-197.64473"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="ea_flow" label="EA Flow">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-1043.3511" y="11.52304"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="saiko" label="Saiko">
+        <attvalues>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="573.69073" y="699.5444"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="pelon_503" label="Pelon 503">
+        <attvalues>
+          <attvalue for="country" value="El Salvador"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="913.5232" y="-49.31033"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="miguel_bose" label="Miguel Bosé">
+        <attvalues>
+          <attvalue for="country" value="Spain"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-132.1726" y="-1187.782"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="travis_barker" label="Travis Barker">
+        <attvalues>
+          <attvalue for="country" value="U.S.A"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-16.140654" y="1197.8594"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="justin_bieber" label="Justin Bieber">
+        <attvalues>
+          <attvalue for="country" value="Canada"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-276.41846" y="-1157.1338"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="selena_gomez" label="Selena Gomez">
+        <attvalues>
+          <attvalue for="country" value="U.S.A"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="451.19006" y="-1101.4236"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="chino_y_nacho" label="Chino &amp; Nacho">
+        <attvalues>
+          <attvalue for="country" value="Venezuela"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="1074.4989" y="523.21985"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="el_potro_alvarez" label="El Potro Alvarez">
+        <attvalues>
+          <attvalue for="country" value="Venezuela"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-884.91833" y="-806.5711"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="ruben_blades" label="Ruben Blades">
+        <attvalues>
+          <attvalue for="type" value="Salsa Artist"/>
+          <attvalue for="country" value="Panama"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="818.55853" y="-702.23926"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="juanes" label="Juanes">
+        <attvalues>
+          <attvalue for="country" value="Colombia"/>
+          <attvalue for="degree" value="0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="720.68787" y="752.66895"/>
+        <viz:color r="237" g="248" b="251"/>
+      </node>
+      <node id="dj_frank" label="DJ Frank">
+        <attvalues>
+          <attvalue for="type" value="Producer"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="208.35031" y="868.23474"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="carbon_fiber_music" label="Carbon Fiber Music">
+        <attvalues>
+          <attvalue for="type" value="Company"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="3"/>
+        </attvalues>
+        <viz:size value="16.0"/>
+        <viz:position x="-110.48027" y="-466.0899"/>
+        <viz:color r="196" g="231" b="224"/>
+      </node>
+      <node id="goldstar_music" label="Goldstar Music">
+        <attvalues>
+          <attvalue for="type" value="Company"/>
+          <attvalue for="country" value="Puerto Rico"/>
+          <attvalue for="degree" value="8"/>
+        </attvalues>
+        <viz:size value="26.0"/>
+        <viz:position x="276.5278" y="217.56087"/>
+        <viz:color r="129" g="204" b="181"/>
+      </node>
+      <node id="Almighty">
+        <attvalues>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="722.2502" y="348.46158"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="Plan_b">
+        <attvalues>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="-1062.7582" y="-544.24335"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="lito">
+        <attvalues>
+          <attvalue for="degree" value="2"/>
+        </attvalues>
+        <viz:size value="14.0"/>
+        <viz:position x="-634.7164" y="-234.51535"/>
+        <viz:color r="210" g="237" b="233"/>
+      </node>
+      <node id="vistante">
+        <attvalues>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="-55.69277" y="914.0685"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="visitante">
+        <attvalues>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="158.00356" y="-473.48026"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+      <node id="darell">
+        <attvalues>
+          <attvalue for="degree" value="1"/>
+        </attvalues>
+        <viz:size value="12.0"/>
+        <viz:position x="594.43787" y="295.24646"/>
+        <viz:color r="223" g="242" b="242"/>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="daddy_yankee" target="don_omar" label="Suena El Bajo" weight="4.0">
+        <viz:color r="81" g="177" b="140"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Suena El Bajo"/>
+        </attvalues>
+      </edge>
+      <edge id="4" source="daddy_yankee" target="wisin_and_yandel" label="No Me Dejes Solo" weight="2.0">
+        <viz:color r="183" g="226" b="216"/>
+        <attvalues>
+          <attvalue for="collaborations" value="No Me Dejes Solo"/>
+        </attvalues>
+      </edge>
+      <edge id="6" source="daddy_yankee" target="randy_nota_loka" label="Salgo Pa' La Calle">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Salgo Pa' La Calle"/>
+        </attvalues>
+      </edge>
+      <edge id="7" source="daddy_yankee" target="arcangel" label="Pasión">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Pasión"/>
+        </attvalues>
+      </edge>
+      <edge id="8" source="daddy_yankee" target="eddie_dee" label="Taladro">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Taladro"/>
+        </attvalues>
+      </edge>
+      <edge id="9" source="daddy_yankee" target="zion_and_lennox" label="Tu Príncipe">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Tu Príncipe"/>
+        </attvalues>
+      </edge>
+      <edge id="10" source="don_omar" target="hector_el_father" label="Caserios #2" weight="2.0">
+        <viz:color r="183" g="226" b="216"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Caserios #2"/>
+        </attvalues>
+      </edge>
+      <edge id="12" source="don_omar" target="trebol_clan" label="Tu Cuerpo Me Arrebata">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Tu Cuerpo Me Arrebata"/>
+        </attvalues>
+      </edge>
+      <edge id="13" source="don_omar" target="gallego" label="La Recompensa">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="La Recompensa"/>
+        </attvalues>
+      </edge>
+      <edge id="14" source="don_omar" target="beenie_man" label="Belly Danza">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Belly Danza"/>
+        </attvalues>
+      </edge>
+      <edge id="15" source="don_omar" target="kendo_kaponi" label="Viviendo Con El Enemigo" weight="3.0">
+        <viz:color r="129" g="204" b="181"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Viviendo Con El Enemigo"/>
+        </attvalues>
+      </edge>
+      <edge id="17" source="don_omar" target="lucenzo" label="Danza Kuduro">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Danza Kuduro"/>
+        </attvalues>
+      </edge>
+      <edge id="18" source="don_omar" target="zion_and_lennox" label="Ella Ella">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Ella Ella"/>
+        </attvalues>
+      </edge>
+      <edge id="20" source="don_omar" target="plan_b" label="Hookah">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Hookah"/>
+        </attvalues>
+      </edge>
+      <edge id="21" source="wisin" target="daddy_yankee" label="Saoco">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Saoco"/>
+        </attvalues>
+      </edge>
+      <edge id="22" source="wisin" target="alexis_y_fido" label="El Jinete">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="El Jinete"/>
+        </attvalues>
+      </edge>
+      <edge id="23" source="wisin" target="tony_dize" label="Dime Qué Sucedió" weight="2.0">
+        <viz:color r="183" g="226" b="216"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Dime Qué Sucedió"/>
+        </attvalues>
+      </edge>
+      <edge id="24" source="wisin" target="gallego" label="Estoy Preso">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Estoy Preso"/>
+        </attvalues>
+      </edge>
+      <edge id="25" source="wisin" target="cosculluela" label="Presión">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Presión"/>
+        </attvalues>
+      </edge>
+      <edge id="26" source="wisin" target="gocho" label="Si Te Vas">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Si Te Vas"/>
+        </attvalues>
+      </edge>
+      <edge id="27" source="wisin" target="jory_boy" label="Claro">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Claro"/>
+        </attvalues>
+      </edge>
+      <edge id="28" source="wisin" target="plan_b" label="Piquete">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Piquete"/>
+        </attvalues>
+      </edge>
+      <edge id="29" source="wisin" target="baby_rasta_y_gringo" label="Callaíto">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Callaíto"/>
+        </attvalues>
+      </edge>
+      <edge id="31" source="wisin" target="farruko" label="Poder">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Poder"/>
+        </attvalues>
+      </edge>
+      <edge id="32" source="yandel" target="alexis" label="Listo Para El Cantazo" weight="2.0">
+        <viz:color r="183" g="226" b="216"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Listo Para El Cantazo"/>
+        </attvalues>
+      </edge>
+      <edge id="34" source="yandel" target="tego_calderon" label="Al Natural" weight="2.0">
+        <viz:color r="183" g="226" b="216"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Al Natural"/>
+        </attvalues>
+      </edge>
+      <edge id="36" source="yandel" target="fido" label="En La Disco Me Conoció">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="En La Disco Me Conoció"/>
+        </attvalues>
+      </edge>
+      <edge id="37" source="hector_el_father" target="divino" label="Noche de Travesura">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Noche de Travesura"/>
+        </attvalues>
+      </edge>
+      <edge id="38" source="hector_el_father" target="tito_el_bambino" label="Hector &amp; Tito Project" weight="2.0">
+        <viz:color r="183" g="226" b="216"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Hector &amp; Tito Project"/>
+        </attvalues>
+      </edge>
+      <edge id="39" source="hector_el_father" target="zion" label="Mirandonos">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Mirandonos"/>
+        </attvalues>
+      </edge>
+      <edge id="40" source="hector_el_father" target="alexis_y_fido" label="Gata Michu Michu">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Gata Michu Michu"/>
+        </attvalues>
+      </edge>
+      <edge id="41" source="hector_el_father" target="polakan" label="La Envidia" weight="2.0">
+        <viz:color r="183" g="226" b="216"/>
+        <attvalues>
+          <attvalue for="collaborations" value="La Envidia"/>
+        </attvalues>
+      </edge>
+      <edge id="42" source="hector_el_father" target="wisin_and_yandel" label="El Telefono">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="El Telefono"/>
+        </attvalues>
+      </edge>
+      <edge id="44" source="hector_el_father" target="yomo" label="Dejale Caer To' El Peso">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Dejale Caer To' El Peso"/>
+        </attvalues>
+      </edge>
+      <edge id="45" source="hector_el_father" target="naldo" label="Mensaje de Voz">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Mensaje de Voz"/>
+        </attvalues>
+      </edge>
+      <edge id="46" source="nicky_jam" target="daddy_yankee" label="Los Cangris Project" weight="4.0">
+        <viz:color r="81" g="177" b="140"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Los Cangris Project"/>
+        </attvalues>
+      </edge>
+      <edge id="49" source="nicky_jam" target="plan_b" label="Si Tu Guayas">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Si Tu Guayas"/>
+        </attvalues>
+      </edge>
+      <edge id="50" source="nicky_jam" target="polakan" label="Nos Fuimos">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Nos Fuimos"/>
+        </attvalues>
+      </edge>
+      <edge id="51" source="julio_voltio" target="tego_calderon" label="Se Van" weight="3.0">
+        <viz:color r="129" g="204" b="181"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Se Van"/>
+        </attvalues>
+      </edge>
+      <edge id="54" source="julio_voltio" target="calle_13" label="Chulin Culin Chunfly">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Chulin Culin Chunfly"/>
+        </attvalues>
+      </edge>
+      <edge id="55" source="julio_voltio" target="zion" label="No Vamos a Parar">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="No Vamos a Parar"/>
+        </attvalues>
+      </edge>
+      <edge id="56" source="yomo" target="randy_nota_loka" label="Yomo/Berto">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Yomo/Berto"/>
+        </attvalues>
+      </edge>
+      <edge id="57" source="yomo" target="wisin_and_yandel" label="Descara Remix">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Descara Remix"/>
+        </attvalues>
+      </edge>
+      <edge id="58" source="plan_b" target="tego_calderon" label="Zapatito Roto">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Zapatito Roto"/>
+        </attvalues>
+      </edge>
+      <edge id="59" source="plan_b" target="tito_el_bambino" label="La Nena de Papa">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="La Nena de Papa"/>
+        </attvalues>
+      </edge>
+      <edge id="60" source="plan_b" target="r.k.m_and_ken-y" label="Lloras">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Lloras"/>
+        </attvalues>
+      </edge>
+      <edge id="61" source="plan_b" target="yandel" label="Pa'l Piso">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Pa'l Piso"/>
+        </attvalues>
+      </edge>
+      <edge id="62" source="plan_b" target="alexis_y_fido" label="El Matadero">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="El Matadero"/>
+        </attvalues>
+      </edge>
+      <edge id="63" source="plan_b" target="zion_and_lennox" label="Dame una Noche">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Dame una Noche"/>
+        </attvalues>
+      </edge>
+      <edge id="64" source="bad_bunny" target="wisin_and_yandel" label="Dame Algo">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Dame Algo"/>
+        </attvalues>
+      </edge>
+      <edge id="65" source="bad_bunny" target="daddy_yankee" label="La Santa">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="La Santa"/>
+        </attvalues>
+      </edge>
+      <edge id="66" source="bad_bunny" target="yaviah" label="Bichiyal">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Bichiyal"/>
+        </attvalues>
+      </edge>
+      <edge id="67" source="bad_bunny" target="residente" label="Bellacoso">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Bellacoso"/>
+        </attvalues>
+      </edge>
+      <edge id="68" source="bad_bunny" target="nengo_flow" label="Que Malo">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Que Malo"/>
+        </attvalues>
+      </edge>
+      <edge id="69" source="bad_bunny" target="sech" label="Ignorantes">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Ignorantes"/>
+        </attvalues>
+      </edge>
+      <edge id="70" source="bad_bunny" target="zion_and_lennox" label="MAS DE UNA CITA">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="MAS DE UNA CITA"/>
+        </attvalues>
+      </edge>
+      <edge id="71" source="bad_bunny" target="don_omar" label="PA' ROMPERLA">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="PA' ROMPERLA"/>
+        </attvalues>
+      </edge>
+      <edge id="72" source="bad_bunny" target="yandel" label="CANCION CON YANDEL">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="CANCION CON YANDEL"/>
+        </attvalues>
+      </edge>
+      <edge id="73" source="bad_bunny" target="nicky_jam" label="BAD CON NICKY">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="BAD CON NICKY"/>
+        </attvalues>
+      </edge>
+      <edge id="74" source="bad_bunny" target="jhayco" label="DÁKITI" weight="2.0">
+        <viz:color r="183" g="226" b="216"/>
+        <attvalues>
+          <attvalue for="collaborations" value="DÁKITI"/>
+        </attvalues>
+      </edge>
+      <edge id="75" source="bad_bunny" target="myke_towers" label="Puesto Pa' Guerrial">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Puesto Pa' Guerrial"/>
+        </attvalues>
+      </edge>
+      <edge id="76" source="bad_bunny" target="rosalia" label="LA NOCHE DE ANOCHE">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="LA NOCHE DE ANOCHE"/>
+        </attvalues>
+      </edge>
+      <edge id="78" source="bad_bunny" target="arcangel" label="La Jumpa">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="La Jumpa"/>
+        </attvalues>
+      </edge>
+      <edge id="79" source="bad_bunny" target="karol_g" label="Ahora Me Llama">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Ahora Me Llama"/>
+        </attvalues>
+      </edge>
+      <edge id="80" source="karol_g" target="anuel_aa" label="Secreto" weight="2.0">
+        <viz:color r="183" g="226" b="216"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Secreto"/>
+        </attvalues>
+      </edge>
+      <edge id="82" source="karol_g" target="cosculluela" label="La Dama">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="La Dama"/>
+        </attvalues>
+      </edge>
+      <edge id="83" source="karol_g" target="ozuna" label="ODISEA" weight="2.0">
+        <viz:color r="183" g="226" b="216"/>
+        <attvalues>
+          <attvalue for="collaborations" value="ODISEA"/>
+        </attvalues>
+      </edge>
+      <edge id="85" source="anuel_aa" target="tego_calderon" label="Jangueo">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Jangueo"/>
+        </attvalues>
+      </edge>
+      <edge id="86" source="anuel_aa" target="bad_bunny" label="Hasta Que Dios Diga">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Hasta Que Dios Diga"/>
+        </attvalues>
+      </edge>
+      <edge id="87" source="anuel_aa" target="zion" label="Hipocrita">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Hipocrita"/>
+        </attvalues>
+      </edge>
+      <edge id="88" source="anuel_aa" target="ozuna" label="Brindemos">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Brindemos"/>
+        </attvalues>
+      </edge>
+      <edge id="89" source="anuel_aa" target="nengo_flow" label="Yeezy">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Yeezy"/>
+        </attvalues>
+      </edge>
+      <edge id="90" source="eddie_dee" target="tego_calderon" label="No Me La Explota" weight="2.0">
+        <viz:color r="183" g="226" b="216"/>
+        <attvalues>
+          <attvalue for="collaborations" value="No Me La Explota"/>
+        </attvalues>
+      </edge>
+      <edge id="92" source="vico_c" target="don_omar" label="La Vecinita">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="La Vecinita"/>
+        </attvalues>
+      </edge>
+      <edge id="93" source="vico_c" target="hector_el_father" label="Mendigo">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Mendigo"/>
+        </attvalues>
+      </edge>
+      <edge id="94" source="vico_c" target="mexicano_777" label="Leyenda">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Leyenda"/>
+        </attvalues>
+      </edge>
+      <edge id="95" source="mexicano_777" target="dj_frank" label="Ponte Bruto">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Ponte Bruto"/>
+        </attvalues>
+      </edge>
+      <edge id="96" source="endo_y_lele" target="mexicano_777" label="Tu Quieres Guerra">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Tu Quieres Guerra"/>
+        </attvalues>
+      </edge>
+      <edge id="97" source="wisin" target="yandel" label="Wisin &amp; Yandel Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Wisin &amp; Yandel Project"/>
+        </attvalues>
+      </edge>
+      <edge id="98" source="zion" target="lennox" label="Zion y Lennox Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Zion y Lennox Project"/>
+        </attvalues>
+      </edge>
+      <edge id="99" source="endo" target="lele_el_arma_secreta" label="Endo y Lele Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Endo y Lele Project"/>
+        </attvalues>
+      </edge>
+      <edge id="100" source="lele_el_arma_secreta" target="d_enyel" label="Intro Secret Family">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Intro Secret Family"/>
+        </attvalues>
+      </edge>
+      <edge id="101" source="wisin_and_yandel" target="wisin" label="Wisin &amp; Yandel Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Wisin &amp; Yandel Project"/>
+        </attvalues>
+      </edge>
+      <edge id="102" source="wisin_and_yandel" target="yandel" label="Wisin &amp; Yandel Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Wisin &amp; Yandel Project"/>
+        </attvalues>
+      </edge>
+      <edge id="103" source="randy_nota_loka" target="jowell" label="Jowell y Randy Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Jowell y Randy Project"/>
+        </attvalues>
+      </edge>
+      <edge id="104" source="jowell_and_randy" target="randy_nota_loka" label="Jowell y Randy Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Jowell y Randy Project"/>
+        </attvalues>
+      </edge>
+      <edge id="105" source="jowell_and_randy" target="jowell" label="Jowell y Randy Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Jowell y Randy Project"/>
+        </attvalues>
+      </edge>
+      <edge id="106" source="endo_y_lele" target="lele_el_arma_secreta" label="Endo y Lele Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Endo y Lele Project"/>
+        </attvalues>
+      </edge>
+      <edge id="107" source="endo_y_lele" target="endo" label="Endo y Lele Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Endo y Lele Project"/>
+        </attvalues>
+      </edge>
+      <edge id="108" source="Almighty" target="farruko" label="Carbon Fiber Music Company">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Carbon Fiber Music Company"/>
+        </attvalues>
+      </edge>
+      <edge id="109" source="carbon_fiber_music" target="farruko" label="Carbon Fiber Music Company">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Carbon Fiber Music Company"/>
+        </attvalues>
+      </edge>
+      <edge id="110" source="carbon_fiber_music" target="almighty" label="Carbon Fiber Music Company">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Carbon Fiber Music Company"/>
+        </attvalues>
+      </edge>
+      <edge id="111" source="alexio_la_bruja" target="carbon_fiber_music" label="Carbon Fiber Music Company">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Carbon Fiber Music Company"/>
+        </attvalues>
+      </edge>
+      <edge id="112" source="wy_records" target="wisin" label="WY Records Company">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="WY Records Company"/>
+        </attvalues>
+      </edge>
+      <edge id="113" source="wy_records" target="yandel" label="WY Records Company">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="WY Records Company"/>
+        </attvalues>
+      </edge>
+      <edge id="114" source="tony_dize" target="wy_records" label="WY Records Company">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="WY Records Company"/>
+        </attvalues>
+      </edge>
+      <edge id="116" source="hector_el_father" target="hector_and_tito" label="Hector &amp; Tito Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Hector &amp; Tito Project"/>
+        </attvalues>
+      </edge>
+      <edge id="117" source="tito_el_bambino" target="hector_and_tito" label="Hector &amp; Tito Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Hector &amp; Tito Project"/>
+        </attvalues>
+      </edge>
+      <edge id="119" source="tego_calderon" target="jiggiri_records" label="Calderon's Company">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Calderon's Company"/>
+        </attvalues>
+      </edge>
+      <edge id="120" source="Plan_b" target="blin_blin_music" label="Blin Blin Music Company Member">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Blin Blin Music Company Member"/>
+        </attvalues>
+      </edge>
+      <edge id="121" source="maldy" target="plan_b" label="Plan B project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Plan B project"/>
+        </attvalues>
+      </edge>
+      <edge id="122" source="chencho_corleone" target="maldy" label="Plan B project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Plan B project"/>
+        </attvalues>
+      </edge>
+      <edge id="123" source="chencho_corleone" target="plan_b" label="Plan B project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Plan B project"/>
+        </attvalues>
+      </edge>
+      <edge id="124" source="alexis" target="fido" label="Alexis y Fido Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Alexis y Fido Project"/>
+        </attvalues>
+      </edge>
+      <edge id="125" source="alexis" target="alexis_y_fido" label="Alexis y Fido Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Alexis y Fido Project"/>
+        </attvalues>
+      </edge>
+      <edge id="126" source="fido" target="alexis_y_fido" label="Alexis y Fido Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Alexis y Fido Project"/>
+        </attvalues>
+      </edge>
+      <edge id="127" source="baby_rasta_y_gringo" target="baby_rasta" label="Baby Rasta y Gringo Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Baby Rasta y Gringo Project"/>
+        </attvalues>
+      </edge>
+      <edge id="128" source="baby_rasta_y_gringo" target="gringo" label="Baby Rasta y Gringo Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Baby Rasta y Gringo Project"/>
+        </attvalues>
+      </edge>
+      <edge id="129" source="gringo" target="baby_rasta" label="Baby Rasta y Gringo Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Baby Rasta y Gringo Project"/>
+        </attvalues>
+      </edge>
+      <edge id="130" source="nejo" target="dalmata" label="Ñejo y Dalmata Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Ñejo y Dalmata Project"/>
+        </attvalues>
+      </edge>
+      <edge id="131" source="nejo_y_dalmata" target="nejo" label="Ñejo y Dalmata Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Ñejo y Dalmata Project"/>
+        </attvalues>
+      </edge>
+      <edge id="132" source="nejo_y_dalmata" target="dalmata" label="Ñejo y Dalmata Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Ñejo y Dalmata Project"/>
+        </attvalues>
+      </edge>
+      <edge id="133" source="lito_and_polaco" target="polakan" label="Lito y Polaco Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Lito y Polaco Project"/>
+        </attvalues>
+      </edge>
+      <edge id="134" source="lito_and_polaco" target="lito" label="Lito y Polaco Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Lito y Polaco Project"/>
+        </attvalues>
+      </edge>
+      <edge id="135" source="lito" target="polakan" label="Lito y Polaco Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Lito y Polaco Project"/>
+        </attvalues>
+      </edge>
+      <edge id="136" source="calle_13" target="residente" label="Calle 13 Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Calle 13 Project"/>
+        </attvalues>
+      </edge>
+      <edge id="137" source="calle_13" target="vistante" label="Calle 13 Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Calle 13 Project"/>
+        </attvalues>
+      </edge>
+      <edge id="138" source="residente" target="visitante" label="Calle 13 Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Calle 13 Project"/>
+        </attvalues>
+      </edge>
+      <edge id="139" source="aventura" target="don_omar" label="Ella y Yo">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Ella y Yo"/>
+        </attvalues>
+      </edge>
+      <edge id="140" source="romeo_santos" target="aventura" label="Aventura Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Aventura Project"/>
+        </attvalues>
+      </edge>
+      <edge id="141" source="romeo_santos" target="anuel_aa" label="Ella Quiere Beber Remix">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Ella Quiere Beber Remix"/>
+        </attvalues>
+      </edge>
+      <edge id="142" source="jenny_la_sexy_voz" target="wisin_and_yandel" label="Paleta" weight="2.0">
+        <viz:color r="183" g="226" b="216"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Paleta"/>
+        </attvalues>
+      </edge>
+      <edge id="144" source="jenny_la_sexy_voz" target="daddy_yankee" label="Paleta">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Paleta"/>
+        </attvalues>
+      </edge>
+      <edge id="145" source="jenny_la_sexy_voz" target="don_omar" label="Donqueo">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Donqueo"/>
+        </attvalues>
+      </edge>
+      <edge id="146" source="jenny_la_sexy_voz" target="endo" label="Frontua">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Frontua"/>
+        </attvalues>
+      </edge>
+      <edge id="147" source="jenny_la_sexy_voz" target="lele_el_arma_secreta" label="Frontua">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Frontua"/>
+        </attvalues>
+      </edge>
+      <edge id="148" source="jenny_la_sexy_voz" target="endo_y_lele" label="Frontua">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Frontua"/>
+        </attvalues>
+      </edge>
+      <edge id="149" source="jenny_la_sexy_voz" target="hector_el_father" label="Ahora Es Que Es" weight="6.0">
+        <viz:color r="0" g="109" b="44"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Ahora Es Que Es"/>
+        </attvalues>
+      </edge>
+      <edge id="151" source="jenny_la_sexy_voz" target="tito_el_bambino" label="Noche de Terror">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Noche de Terror"/>
+        </attvalues>
+      </edge>
+      <edge id="153" source="jenny_la_sexy_voz" target="angel_doze" label="Vamonos a Fuego">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Vamonos a Fuego"/>
+        </attvalues>
+      </edge>
+      <edge id="154" source="jenny_la_sexy_voz" target="anuel_aa" label="DURO">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="DURO"/>
+        </attvalues>
+      </edge>
+      <edge id="158" source="tainy" target="hector_el_father" label="Dejale Caer To' El Peso">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Dejale Caer To' El Peso"/>
+        </attvalues>
+      </edge>
+      <edge id="159" source="tainy" target="yomo" label="Dejale Caer To' El Peso">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Dejale Caer To' El Peso"/>
+        </attvalues>
+      </edge>
+      <edge id="160" source="j_balvin" target="bad_bunny" label="Oasis Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Oasis Project"/>
+        </attvalues>
+      </edge>
+      <edge id="161" source="lele_el_arma_secreta" target="hector_el_father" label="Maldades" weight="3.0">
+        <viz:color r="129" g="204" b="181"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Maldades"/>
+        </attvalues>
+      </edge>
+      <edge id="164" source="don_omar" target="luny_tunes" label="Caserios #2" weight="3.0">
+        <viz:color r="129" g="204" b="181"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Caserios #2"/>
+        </attvalues>
+      </edge>
+      <edge id="165" source="tainy" target="wisin_and_yandel" label="Paleta">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Paleta"/>
+        </attvalues>
+      </edge>
+      <edge id="166" source="tainy" target="daddy_yankee" label="La Santa" weight="4.0">
+        <viz:color r="81" g="177" b="140"/>
+        <attvalues>
+          <attvalue for="collaborations" value="La Santa"/>
+        </attvalues>
+      </edge>
+      <edge id="169" source="tainy" target="eddie_dee" label="Taladro">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Taladro"/>
+        </attvalues>
+      </edge>
+      <edge id="172" source="don_omar" target="a_and_x" label="Danza Kuduro">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Danza Kuduro"/>
+        </attvalues>
+      </edge>
+      <edge id="173" source="lucenzo" target="a_and_x" label="Danza Kuduro">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Danza Kuduro"/>
+        </attvalues>
+      </edge>
+      <edge id="174" source="urba" target="wisin" label="Saoco">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Saoco"/>
+        </attvalues>
+      </edge>
+      <edge id="175" source="urba" target="daddy_yankee" label="Saoco">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Saoco"/>
+        </attvalues>
+      </edge>
+      <edge id="176" source="luny_tunes" target="tego_calderon" label="Al Natural" weight="2.0">
+        <viz:color r="183" g="226" b="216"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Al Natural"/>
+        </attvalues>
+      </edge>
+      <edge id="177" source="luny_tunes" target="yandel" label="Al Natural" weight="2.0">
+        <viz:color r="183" g="226" b="216"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Al Natural"/>
+        </attvalues>
+      </edge>
+      <edge id="180" source="luny_tunes" target="hector_el_father" label="Noche de Travesura">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Noche de Travesura"/>
+        </attvalues>
+      </edge>
+      <edge id="181" source="luny_tunes" target="divino" label="Noche de Travesura">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Noche de Travesura"/>
+        </attvalues>
+      </edge>
+      <edge id="182" source="tainy" target="bad_bunny" label="La Santa">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="La Santa"/>
+        </attvalues>
+      </edge>
+      <edge id="184" source="luny_tunes" target="wisin_and_yandel" label="Mayor Que Yo" weight="2.0">
+        <viz:color r="183" g="226" b="216"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Mayor Que Yo"/>
+        </attvalues>
+      </edge>
+      <edge id="185" source="don_omar" target="alex_gargolas" label="Luna">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Luna"/>
+        </attvalues>
+      </edge>
+      <edge id="186" source="julio_voltio" target="hector_el_father" label="Masters of Funk Project">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Masters of Funk Project"/>
+        </attvalues>
+      </edge>
+      <edge id="187" source="goldstar_music" target="hector_el_father" label="Goldstar Music Company CEO">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Goldstar Music Company CEO"/>
+        </attvalues>
+      </edge>
+      <edge id="188" source="goldstar_music" target="lele_el_arma_secreta" label="Goldstar Music Company">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Goldstar Music Company"/>
+        </attvalues>
+      </edge>
+      <edge id="189" source="goldstar_music" target="kartier" label="Goldstar Music Company">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Goldstar Music Company"/>
+        </attvalues>
+      </edge>
+      <edge id="190" source="goldstar_music" target="yomo" label="Goldstar Music Company">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Goldstar Music Company"/>
+        </attvalues>
+      </edge>
+      <edge id="191" source="goldstar_music" target="polakan" label="Goldstar Music Company">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Goldstar Music Company"/>
+        </attvalues>
+      </edge>
+      <edge id="192" source="goldstar_music" target="algarete" label="Goldstar Music Company">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Goldstar Music Company"/>
+        </attvalues>
+      </edge>
+      <edge id="193" source="goldstar_music" target="jomar_el_caballo_negro" label="Goldstar Music Company">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Goldstar Music Company"/>
+        </attvalues>
+      </edge>
+      <edge id="194" source="algarete" target="jomar_el_caballo_negro" label="Malvada">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Malvada"/>
+        </attvalues>
+      </edge>
+      <edge id="195" source="algarete" target="jenny_la_sexy_voz" label="Malvada">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Malvada"/>
+        </attvalues>
+      </edge>
+      <edge id="196" source="jomar_el_caballo_negro" target="jenny_la_sexy_voz" label="Malvada">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Malvada"/>
+        </attvalues>
+      </edge>
+      <edge id="197" source="r.k.m_and_ken-y" target="pina_records" label="Pina Records Company">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Pina Records Company"/>
+        </attvalues>
+      </edge>
+      <edge id="198" source="pina_records" target="raphy_pina" label="Pina Records Company CEO">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Pina Records Company CEO"/>
+        </attvalues>
+      </edge>
+      <edge id="199" source="pina_records" target="arcangel" label="Pina Records Company">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Pina Records Company"/>
+        </attvalues>
+      </edge>
+      <edge id="200" source="pina_records" target="julio_voltio" label="Pina Records">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Pina Records"/>
+        </attvalues>
+      </edge>
+      <edge id="201" source="hector_el_father" target="r.k.m_and_ken-y" label="Down Remix">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Down Remix"/>
+        </attvalues>
+      </edge>
+      <edge id="202" source="goldstar_music" target="ariel_el_puro" label="Goldstar Music Company">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Goldstar Music Company"/>
+        </attvalues>
+      </edge>
+      <edge id="203" source="oscar_d_leon" target="tego_calderon" label="Llora,Llora">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Llora,Llora"/>
+        </attvalues>
+      </edge>
+      <edge id="204" source="nile_rodgers" target="daddy_yankee" label="Agua">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Agua"/>
+        </attvalues>
+      </edge>
+      <edge id="205" source="nile_rodgers" target="rauw_alejandro" label="Agua">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Agua"/>
+        </attvalues>
+      </edge>
+      <edge id="206" source="daddy_yankee" target="rauw_alejandro" label="Agua">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Agua"/>
+        </attvalues>
+      </edge>
+      <edge id="207" source="karol_g" target="ivy_queen" label="LEYENDAS">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="LEYENDAS"/>
+        </attvalues>
+      </edge>
+      <edge id="208" source="karol_g" target="nicky_jam" label="LEYENDAS">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="LEYENDAS"/>
+        </attvalues>
+      </edge>
+      <edge id="209" source="karol_g" target="wisin_and_yandel" label="LEYENDAS">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="LEYENDAS"/>
+        </attvalues>
+      </edge>
+      <edge id="210" source="karol_g" target="zion" label="LEYENDAS">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="LEYENDAS"/>
+        </attvalues>
+      </edge>
+      <edge id="211" source="karol_g" target="alberto_stylee" label="LEYENDAS">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="LEYENDAS"/>
+        </attvalues>
+      </edge>
+      <edge id="212" source="karol_g" target="dj_nelson" label="LEYENDAS">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="LEYENDAS"/>
+        </attvalues>
+      </edge>
+      <edge id="213" source="anuel_aa" target="dj_nelson" label="Ayer">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Ayer"/>
+        </attvalues>
+      </edge>
+      <edge id="214" source="urba_and_rome" target="tego_calderon" label="La Receta">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="La Receta"/>
+        </attvalues>
+      </edge>
+      <edge id="215" source="tego_calderon" target="victor_manuelle" label="Che Che Colé">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Che Che Colé"/>
+        </attvalues>
+      </edge>
+      <edge id="216" source="nio_garcia" target="bad_bunny" label="AM Remix" weight="2.0">
+        <viz:color r="183" g="226" b="216"/>
+        <attvalues>
+          <attvalue for="collaborations" value="AM Remix"/>
+        </attvalues>
+      </edge>
+      <edge id="217" source="nio_garcia" target="ozuna" label="Travesuras Remix" weight="2.0">
+        <viz:color r="183" g="226" b="216"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Travesuras Remix"/>
+        </attvalues>
+      </edge>
+      <edge id="218" source="nio_garcia" target="nicky_jam" label="Te Boté Remix">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Te Boté Remix"/>
+        </attvalues>
+      </edge>
+      <edge id="219" source="nio_garcia" target="darell" label="Te Boté Remix">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Te Boté Remix"/>
+        </attvalues>
+      </edge>
+      <edge id="220" source="nio_garcia" target="wisin_and_yandel" label="Travesuras Remix">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Travesuras Remix"/>
+        </attvalues>
+      </edge>
+      <edge id="221" source="nio_garcia" target="myke_towers" label="Travesuras Remix">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Travesuras Remix"/>
+        </attvalues>
+      </edge>
+      <edge id="223" source="nio_garcia" target="don_omar" label="Se Menea">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Se Menea"/>
+        </attvalues>
+      </edge>
+      <edge id="224" source="nio_garcia" target="j_balvin" label="AM Remix">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="AM Remix"/>
+        </attvalues>
+      </edge>
+      <edge id="226" source="daddy_yankee" target="pitbull" label="Gasolina Remix">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Gasolina Remix"/>
+        </attvalues>
+      </edge>
+      <edge id="227" source="daddy_yankee" target="lil_jon" label="Gasolina Remix">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Gasolina Remix"/>
+        </attvalues>
+      </edge>
+      <edge id="228" source="pitbull" target="don_miguelo" label="Como yo le Doy">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Como yo le Doy"/>
+        </attvalues>
+      </edge>
+      <edge id="229" source="maluma" target="noriel" label="Cuatro Babys">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Cuatro Babys"/>
+        </attvalues>
+      </edge>
+      <edge id="230" source="maluma" target="bryant_myers" label="Cuatro Babys">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Cuatro Babys"/>
+        </attvalues>
+      </edge>
+      <edge id="231" source="noriel" target="pailita" label="Na Na Na">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Na Na Na"/>
+        </attvalues>
+      </edge>
+      <edge id="232" source="pailita" target="pablo_chill-e" label="Na Na Na">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Na Na Na"/>
+        </attvalues>
+      </edge>
+      <edge id="233" source="pailita" target="el_jordan_23" label="Na Na Na">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Na Na Na"/>
+        </attvalues>
+      </edge>
+      <edge id="234" source="victor_manuelle" target="yomo" label="No hay Nadie">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="No hay Nadie"/>
+        </attvalues>
+      </edge>
+      <edge id="235" source="victor_manuelle" target="hector_el_father" label="No hay Nadie">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="No hay Nadie"/>
+        </attvalues>
+      </edge>
+      <edge id="236" source="el_chombo" target="karol_g" label="Dame Tu Cosita Remix">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Dame Tu Cosita Remix"/>
+        </attvalues>
+      </edge>
+      <edge id="237" source="el_chombo" target="pitbull" label="Dame Tu Cosita Remix">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Dame Tu Cosita Remix"/>
+        </attvalues>
+      </edge>
+      <edge id="238" source="la_factoria" target="farruko" label="Perdoname Remix">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Perdoname Remix"/>
+        </attvalues>
+      </edge>
+      <edge id="239" source="luny_tunes" target="baby_ranks" label="Mayor Que Yo">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Mayor Que Yo"/>
+        </attvalues>
+      </edge>
+      <edge id="240" source="luny_tunes" target="daddy_yankee" label="Mayor Que Yo">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Mayor Que Yo"/>
+        </attvalues>
+      </edge>
+      <edge id="242" source="feid" target="yandel" label="Yandel 150">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Yandel 150"/>
+        </attvalues>
+      </edge>
+      <edge id="243" source="feid" target="bad_bunny" label="Perro Negro">
+        <viz:color r="237" g="248" b="251"/>
+        <attvalues>
+          <attvalue for="collaborations" value="Perro Negro"/>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

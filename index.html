@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reggaeton: A Comprehensive Visualization</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/sigma.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.parsers.gexf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.plugins.dragNodes.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.plugins.filter.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Reggaeton Network Visualization</h1>
+    </header>
+
+    <div id="graph-container"></div>
+    
+  </div>
+
+  <div class="button-group">
+    <a href="welcome.html">Take me to Homepage</a>
+  </div>
+
+
+  <script>
+    let sigmaInstance;
+    
+    sigma.parsers.gexf(
+      'reggaetion.gexf', 
+      {
+        container: 'graph-container',
+        settings: {
+          defaultNodeColor: '#3388AA',
+          defaultEdgeColor: '#ccc',
+          edgeColor: 'default',
+          minNodeSize: 2,
+          maxNodeSize: 15,
+          minEdgeSize: 0.5,
+          maxEdgeSize: 2,
+          enableEdgeHovering: true,
+          edgeHoverColor: 'edge',
+          defaultEdgeHoverColor: '#000',
+          edgeHoverSizeRatio: 2,
+          edgeHoverExtremities: true,
+          labelThreshold: 7,
+          labelSize: 'proportional',
+          labelSizeRatio: 1.5,
+          drawLabels: true,
+          drawEdgeLabels: false,
+          zoomingRatio: 2.2,           
+          doubleClickZoomingRatio: 332.5, 
+          mouseZoomDuration: 80,       
+          touchEnabled: true,
+          mouseWheelEnabled: true,
+          doubleClickEnabled: true,
+          
+          hideEdgesOnMove: true,        
+          renderLabels: false,          
+          enableHovering: false,        
+          batchEdgesDrawing: true,      
+          webglEdges: true              
+        }
+      },
+      function(s) {
+        sigmaInstance = s;
+        
+        s.renderers[0].container.addEventListener('wheel', function(e) {
+          e.preventDefault();
+          
+          const position = {
+            x: e.offsetX,
+            y: e.offsetY
+          };
+          
+          const wheelDelta = e.deltaY || e.detail || e.wheelDelta;
+          const direction = wheelDelta > 0 ? 1 : -1;
+          const ratio = direction > 0 ? 1 / s.settings('zoomingRatio') : s.settings('zoomingRatio');
+          
+          s.cameras[0].goTo({
+            ratio: s.cameras[0].ratio * ratio,
+            x: position.x,
+            y: position.y
+          });
+          
+          s.refresh();
+        }, false);
+        
+        
+        s.refresh();
+      }
+    );
+  </script>
+
+</body>
+</html>

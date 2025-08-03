@@ -57,7 +57,7 @@
         if (!response.ok) throw new Error("Failed to load GEXF");
         const gexfText = await response.text();
 
-        const parser = new graphologyGexf.GEXFParser();
+        const parser = new graphologyGexfParser.GEXFParser();
         const graph = parser.parse(gexfText);
 
         const renderer = new sigma.Sigma(graph, container, {
@@ -82,3 +82,4 @@
   </script>
 </body>
 </html>
+

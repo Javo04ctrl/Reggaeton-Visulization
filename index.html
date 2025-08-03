@@ -9,6 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/sigma.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.parsers.gexf.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.plugins.dragNodes.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.plugins.activeState.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -18,6 +19,9 @@
 
     <div id="graph-container" style="height: 90vh;"></div>
     <div id="node-info" style="position: absolute; top: 10px; right: 10px; background: #fff; border: 1px solid #ccc; padding: 10px; display: none;"></div>
+    <div style="position: absolute; bottom: 20px; left: 20px; background: white; padding: 10px; border: 1px solid #ccc;">
+      <label><input type="checkbox" id="toggle-edge-labels"> Show Edge Labels</label>
+    </div>
   </div>
 
   <div class="button-group">
@@ -47,17 +51,19 @@
           labelSizeRatio: 1.5,
           drawLabels: true,
           drawEdgeLabels: false,
-          zoomingRatio: 1.7,
-          mouseZoomDuration: 120,
+          zoomingRatio: 2,
+          mouseZoomDuration: 50,
           doubleClickEnabled: true,
           mouseEnabled: true,
-          touchEnabled: true
+          touchEnabled: true,
+          hideEdgesOnMove: true,
+          hideLabelsOnMove: true,
+          canvasEdges: true
         }
       },
       function(s) {
         sigma.plugins.dragNodes(s, s.renderers[0]);
 
-        // Node click interaction
         s.bind('clickNode', function(e) {
           var data = s.graph.nodes(e.data.node.id);
           var label = data.label || data.id;
@@ -65,7 +71,12 @@
           document.getElementById('node-info').style.display = 'block';
         });
 
-        // Center camera
+        // Enable edge label toggle
+        document.getElementById('toggle-edge-labels').addEventListener('change', function(e) {
+          s.settings('drawEdgeLabels', e.target.checked);
+          s.refresh();
+        });
+
         s.camera.goTo({ x: 0, y: 0, ratio: 1 });
         s.refresh();
       }
@@ -73,5 +84,3 @@
   </script>
 </body>
 </html>
-
-

@@ -17,6 +17,7 @@
     </header>
 
     <div id="graph-container" style="height: 90vh;"></div>
+    <div id="node-info" style="position: absolute; top: 10px; right: 10px; background: #fff; border: 1px solid #ccc; padding: 10px; display: none;"></div>
   </div>
 
   <div class="button-group">
@@ -48,14 +49,23 @@
           drawEdgeLabels: false,
           zoomingRatio: 1.7,
           mouseZoomDuration: 120,
-          doubleClickEnabled: true
+          doubleClickEnabled: true,
+          mouseEnabled: true,
+          touchEnabled: true
         }
       },
       function(s) {
-        // Enable drag plugin
         sigma.plugins.dragNodes(s, s.renderers[0]);
 
-        // Center camera after initial render
+        // Node click interaction
+        s.bind('clickNode', function(e) {
+          var data = s.graph.nodes(e.data.node.id);
+          var label = data.label || data.id;
+          document.getElementById('node-info').innerHTML = '<strong>' + label + '</strong>';
+          document.getElementById('node-info').style.display = 'block';
+        });
+
+        // Center camera
         s.camera.goTo({ x: 0, y: 0, ratio: 1 });
         s.refresh();
       }
@@ -63,4 +73,5 @@
   </script>
 </body>
 </html>
+
 

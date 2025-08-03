@@ -41,24 +41,25 @@
           maxNodeSize: 15,
           minEdgeSize: 0.5,
           maxEdgeSize: 2,
-          enableEdgeHovering: true,
-          edgeHoverColor: 'edge',
-          defaultEdgeHoverColor: '#000',
-          edgeHoverSizeRatio: 2,
-          edgeHoverExtremities: true,
-          labelThreshold: 6,
+          enableEdgeHovering: false,
+          edgeHoverSizeRatio: 1,
+          edgeHoverExtremities: false,
+          labelThreshold: 8,
           labelSize: 'proportional',
-          labelSizeRatio: 1.5,
+          labelSizeRatio: 1,
           drawLabels: true,
           drawEdgeLabels: false,
-          zoomingRatio: 2,
-          mouseZoomDuration: 50,
-          doubleClickEnabled: true,
+          zoomingRatio: 1.5,
+          mouseZoomDuration: 20,
+          doubleClickEnabled: false,
           mouseEnabled: true,
           touchEnabled: true,
           hideEdgesOnMove: true,
           hideLabelsOnMove: true,
-          canvasEdges: true
+          canvasEdges: true,
+          autoRescale: true,
+          batchEdgesDrawing: true,
+          drawNodes: true
         }
       },
       function(s) {
@@ -71,16 +72,33 @@
           document.getElementById('node-info').style.display = 'block';
         });
 
-        // Enable edge label toggle
         document.getElementById('toggle-edge-labels').addEventListener('change', function(e) {
           s.settings('drawEdgeLabels', e.target.checked);
           s.refresh();
         });
 
-        s.camera.goTo({ x: 0, y: 0, ratio: 1 });
+        // Optimize camera view (zoom-to-fit equivalent)
+        var nodes = s.graph.nodes();
+        var minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+        for (var i = 0; i < nodes.length; i++) {
+          var n = nodes[i];
+          var x = n['read_cam0:x'] || n['x'];
+          var y = n['read_cam0:y'] || n['y'];
+          if (x < minX) minX = x;
+          if (x > maxX) maxX = x;
+          if (y < minY) minY = y;
+          if (y > maxY) maxY = y;
+        }
+        var centerX = (minX + maxX) / 2;
+        var centerY = (minY + maxY) / 2;
+        var maxDim = Math.max(maxX - minX, maxY - minY);
+        s.camera.goTo({ x: centerX, y: centerY, ratio: 2.5 / maxDim });
+
         s.refresh();
       }
     );
   </script>
 </body>
 </html>
+
+

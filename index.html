@@ -11,9 +11,15 @@
   <script src="https://cdn.jsdelivr.net/npm/graphology-gexf@0.9.1/build/graphology-gexf.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sigma@2.3.1/build/sigma.min.js"></script>
   <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
     #graph-container {
-      width: 100%;
+      width: 100vw;
       height: 90vh;
+      display: block;
     }
     #info-panel {
       position: absolute;
@@ -23,6 +29,7 @@
       padding: 10px;
       border: 1px solid #ccc;
       display: none;
+      max-width: 200px;
     }
   </style>
 </head>
@@ -41,40 +48,39 @@
   </div>
 
   <script>
-    async function init() {
+    window.onload = async function init() {
       const container = document.getElementById('graph-container');
-      const response = await fetch('reggaetion.gexf');
-      const gexfText = await response.text();
-
-      const graph = window.graphologyGexf.parse(gexfText);
-
-      const renderer = new sigma.Sigma(graph, container, {
-        renderLabels: true,
-        enableHovering: true,
-        labelRenderedSizeThreshold: 8,
-        labelFont: "Lato",
-        zIndex: true,
-      });
-
-      // Node click interaction
       const infoPanel = document.getElementById("info-panel");
-      renderer.on("clickNode", ({ node }) => {
-        const data = graph.getNodeAttributes(node);
-        infoPanel.innerHTML = `<strong>${data.label || node}</strong>`;
-        infoPanel.style.display = 'block';
-      });
 
-      renderer.getCamera().animate({
-        ratio: 1,
-        x: 0,
-        y: 0
-      }, {
-        duration: 600
-      });
+      try {
+        const response = await fetch('reggaetion.gexf');
+        if (!response.ok) throw new Error("Failed to load GEXF");
+        const gexfText = await response.text();
+
+        const graph = window.graphologyGexf.parse(gexfText);
+
+        const renderer = new sigma.Sigma(graph, container, {
+          renderLabels: true,
+          enableHovering: true,
+          labelRenderedSizeThreshold: 8,
+          zIndex: true,
+        });
+
+        renderer.on("clickNode", ({ node }) => {
+          const data = graph.getNodeAttributes(node);
+          infoPanel.innerHTML = `<strong>${data.label || node}</strong>`;
+          infoPanel.style.display = 'block';
+        });
+
+        renderer.getCamera().animate({ ratio: 1, x: 0, y: 0 }, { duration: 500 });
+      } catch (e) {
+        container.innerHTML = '<p>Error loading graph: ' + e.message + '</p>';
+        console.error(e);
+      }
     }
-
-    init();
   </script>
 </body>
 </html>
+
+
 

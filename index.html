@@ -1,37 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reggaeton Network Visualization</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reggaeton: A Comprehensive Visualization</title>
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Sigma.js v2 and Graphology -->
-  <script src="https://cdn.jsdelivr.net/npm/graphology@0.25.1/dist/graphology.umd.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/graphology-gexf@0.9.1/build/graphology-gexf.umd.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sigma@2.3.1/build/sigma.min.js"></script>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-    #graph-container {
-      width: 100vw;
-      height: 90vh;
-      display: block;
-    }
-    #info-panel {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: white;
-      padding: 10px;
-      border: 1px solid #ccc;
-      display: none;
-      max-width: 200px;
-    }
-  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/sigma.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.parsers.gexf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.plugins.dragNodes.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -39,8 +16,7 @@
       <h1>Reggaeton Network Visualization</h1>
     </header>
 
-    <div id="graph-container"></div>
-    <div id="info-panel"></div>
+    <div id="graph-container" style="height: 90vh;"></div>
   </div>
 
   <div class="button-group">
@@ -48,36 +24,42 @@
   </div>
 
   <script>
-    window.onload = async function init() {
-      const container = document.getElementById('graph-container');
-      const infoPanel = document.getElementById("info-panel");
+    sigma.parsers.gexf(
+      'reggaetion.gexf',
+      {
+        container: 'graph-container',
+        settings: {
+          defaultNodeColor: '#3388AA',
+          defaultEdgeColor: '#ccc',
+          edgeColor: 'default',
+          minNodeSize: 2,
+          maxNodeSize: 15,
+          minEdgeSize: 0.5,
+          maxEdgeSize: 2,
+          enableEdgeHovering: true,
+          edgeHoverColor: 'edge',
+          defaultEdgeHoverColor: '#000',
+          edgeHoverSizeRatio: 2,
+          edgeHoverExtremities: true,
+          labelThreshold: 6,
+          labelSize: 'proportional',
+          labelSizeRatio: 1.5,
+          drawLabels: true,
+          drawEdgeLabels: false,
+          zoomingRatio: 1.7,
+          mouseZoomDuration: 120,
+          doubleClickEnabled: true
+        }
+      },
+      function(s) {
+        // Enable drag plugin
+        sigma.plugins.dragNodes(s, s.renderers[0]);
 
-      try {
-        const response = await fetch('reggaetion.gexf');
-        if (!response.ok) throw new Error("Failed to load GEXF");
-        const gexfText = await response.text();
-
-        const graph = graphologyGexf.parse(gexfText);
-
-        const renderer = new sigma.Sigma(graph, container, {
-          renderLabels: true,
-          enableHovering: true,
-          labelRenderedSizeThreshold: 8,
-          zIndex: true,
-        });
-
-        renderer.on("clickNode", ({ node }) => {
-          const data = graph.getNodeAttributes(node);
-          infoPanel.innerHTML = `<strong>${data.label || node}</strong>`;
-          infoPanel.style.display = 'block';
-        });
-
-        renderer.getCamera().animate({ ratio: 1, x: 0, y: 0 }, { duration: 500 });
-      } catch (e) {
-        container.innerHTML = '<p>Error loading graph: ' + e.message + '</p>';
-        console.error(e);
+        // Center camera after initial render
+        s.camera.goTo({ x: 0, y: 0, ratio: 1 });
+        s.refresh();
       }
-    }
+    );
   </script>
 </body>
 </html>

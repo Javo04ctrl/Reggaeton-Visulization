@@ -21,6 +21,7 @@
     <div id="node-info" style="position: absolute; top: 10px; right: 10px; background: #fff; border: 1px solid #ccc; padding: 10px; display: none;"></div>
     <div style="position: absolute; bottom: 20px; left: 20px; background: white; padding: 10px; border: 1px solid #ccc;">
       <label><input type="checkbox" id="toggle-edge-labels"> Show Edge Labels</label>
+      <button id="toggle-layout" style="margin-left: 10px;">Toggle Animation</button>
     </div>
   </div>
 
@@ -41,11 +42,11 @@
           maxNodeSize: 15,
           minEdgeSize: 0.5,
           maxEdgeSize: 2,
-          labelThreshold: 8,
+          labelThreshold: 0,
           labelSize: 'proportional',
           labelSizeRatio: 1,
           drawLabels: true,
-          drawEdgeLabels: true,
+          drawEdgeLabels: false,
           zoomingRatio: 1.5,
           mouseZoomDuration: 20,
           doubleClickEnabled: false,
@@ -62,7 +63,9 @@
       function(s) {
         sigma.plugins.dragNodes(s, s.renderers[0]);
 
-        // Run ForceAtlas2 layout with soft repulsion
+        let isRunning = true;
+
+        // Start ForceAtlas2 layout
         s.startForceAtlas2({
           linLogMode: false,
           outboundAttractionDistribution: false,
@@ -76,7 +79,19 @@
 
         setTimeout(function() {
           s.stopForceAtlas2();
+          isRunning = false;
         }, 6000);
+
+        document.getElementById('toggle-layout').addEventListener('click', function() {
+          if (isRunning) {
+            s.stopForceAtlas2();
+            this.textContent = 'Start Animation';
+          } else {
+            s.startForceAtlas2();
+            this.textContent = 'Stop Animation';
+          }
+          isRunning = !isRunning;
+        });
 
         s.bind('clickNode', function(e) {
           var data = s.graph.nodes(e.data.node.id);
@@ -96,6 +111,7 @@
   </script>
 </body>
 </html>
+
 
 
 

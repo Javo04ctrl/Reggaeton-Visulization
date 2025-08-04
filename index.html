@@ -9,7 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/sigma.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.parsers.gexf.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.plugins.dragNodes.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.plugins.activeState.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.layout.forceAtlas2.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -41,14 +41,11 @@
           maxNodeSize: 15,
           minEdgeSize: 0.5,
           maxEdgeSize: 2,
-          enableEdgeHovering: false,
-          edgeHoverSizeRatio: 1,
-          edgeHoverExtremities: false,
           labelThreshold: 8,
           labelSize: 'proportional',
           labelSizeRatio: 1,
           drawLabels: true,
-          drawEdgeLabels: false,
+          drawEdgeLabels: true,
           zoomingRatio: 1.5,
           mouseZoomDuration: 20,
           doubleClickEnabled: false,
@@ -65,6 +62,22 @@
       function(s) {
         sigma.plugins.dragNodes(s, s.renderers[0]);
 
+        // Run ForceAtlas2 layout with soft repulsion
+        s.startForceAtlas2({
+          linLogMode: false,
+          outboundAttractionDistribution: false,
+          adjustSizes: true,
+          edgeWeightInfluence: 0,
+          scalingRatio: 10,
+          strongGravityMode: false,
+          gravity: 1,
+          slowDown: 1
+        });
+
+        setTimeout(function() {
+          s.stopForceAtlas2();
+        }, 6000);
+
         s.bind('clickNode', function(e) {
           var data = s.graph.nodes(e.data.node.id);
           var label = data.label || data.id;
@@ -77,28 +90,12 @@
           s.refresh();
         });
 
-        // Optimize camera view (zoom-to-fit equivalent)
-        var nodes = s.graph.nodes();
-        var minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
-        for (var i = 0; i < nodes.length; i++) {
-          var n = nodes[i];
-          var x = n['read_cam0:x'] || n['x'];
-          var y = n['read_cam0:y'] || n['y'];
-          if (x < minX) minX = x;
-          if (x > maxX) maxX = x;
-          if (y < minY) minY = y;
-          if (y > maxY) maxY = y;
-        }
-        var centerX = (minX + maxX) / 2;
-        var centerY = (minY + maxY) / 2;
-        var maxDim = Math.max(maxX - minX, maxY - minY);
-        s.camera.goTo({ x: centerX, y: centerY, ratio: 2.5 / maxDim });
-
         s.refresh();
       }
     );
   </script>
 </body>
 </html>
+
 
 

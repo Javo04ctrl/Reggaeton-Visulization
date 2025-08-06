@@ -61,8 +61,21 @@
   <body>
     <div class="container">
       <h1>Reggaetón: A Comprehensive History</h1>
-      <iframe src="RegggaetnAcomprhensivehistory.html" title="Reggaetón Essay" width="100%" height="1200px" style="border:none;"></iframe>
+      <div id="essay"></div>
       <a href="welcome.html" class="back-link">Back to Home Page</a>
     </div>
+
+    <script>
+      fetch('RegggaetnAcomprhensivehistory.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('essay').innerHTML = data;
+        })
+        .catch(error => {
+          document.getElementById('essay').innerHTML = '<p style="color:red;">Failed to load essay content.</p>';
+          console.error('Error loading essay:', error);
+        });
+    </script>
   </body>
 </html>
+

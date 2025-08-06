@@ -73,6 +73,7 @@
         let isRunning = true;
         let layoutIndex = 0;
         const layouts = ['fr', 'fa2', 'rotation'];
+        let layoutInterval;
 
         function updateLayoutLabel(name) {
           document.getElementById('layout-name').textContent = name;
@@ -123,42 +124,47 @@
           updateLayoutLabel('Rotation');
         }
 
-        function cycleLayouts() {
-          const layout = layouts[layoutIndex];
-          layoutIndex = (layoutIndex + 1) % layouts.length;
-
+        function runLayout(layout) {
           stopFA2();
           sigma.layouts.fruchtermanReingold.stop();
-
           if (layout === 'fr') startFR();
           else if (layout === 'fa2') startFA2();
           else if (layout === 'rotation') rotateLayout();
+        }
 
+        function cycleLayouts() {
+          const layout = layouts[layoutIndex];
+          layoutIndex = (layoutIndex + 1) % layouts.length;
           document.getElementById('layout-select').value = layout;
+          runLayout(layout);
+        }
+
+        function startAnimationCycle() {
+          layoutInterval = setInterval(() => {
+            if (isRunning) cycleLayouts();
+          }, 6000);
+        }
+
+        function stopAnimationCycle() {
+          clearInterval(layoutInterval);
+          stopFA2();
+          sigma.layouts.fruchtermanReingold.stop();
         }
 
         startFR();
-
-        const interval = setInterval(() => {
-          if (isRunning) cycleLayouts();
-        }, 6000);
+        startAnimationCycle();
 
         document.getElementById('toggle-layout').addEventListener('click', function() {
           isRunning = !isRunning;
           this.textContent = isRunning ? 'Stop Animation' : 'Start Animation';
-
-          if (!isRunning) {
-            stopFA2();
-            sigma.layouts.fruchtermanReingold.stop();
-          } else {
-            cycleLayouts();
-          }
+          if (!isRunning) stopAnimationCycle();
+          else startAnimationCycle();
         });
 
         document.getElementById('layout-select').addEventListener('change', function(e) {
           const selected = e.target.value;
           layoutIndex = layouts.indexOf(selected);
-          cycleLayouts();
+          runLayout(selected);
         });
 
         s.bind('clickNode', function(e) {

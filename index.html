@@ -10,6 +10,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.parsers.gexf.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.plugins.dragNodes.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.layout.fruchtermanReingold.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.layout.forceAtlas2.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -20,7 +21,14 @@
     <div id="graph-container" style="height: 90vh;"></div>
     <div id="node-info" style="position: absolute; top: 10px; right: 10px; background: #fff; border: 1px solid #ccc; padding: 10px; display: none;"></div>
     <div style="position: absolute; bottom: 20px; left: 20px; background: white; padding: 10px; border: 1px solid #ccc;">
-      <button id="toggle-layout">Toggle Animation</button>
+      <label for="layout-select">Layout:</label>
+      <select id="layout-select">
+        <option value="fr">Fruchterman-Reingold</option>
+        <option value="fa2">ForceAtlas2</option>
+        <option value="rotation">Rotation</option>
+      </select>
+      <button id="toggle-layout">Stop Animation</button>
+      <span id="layout-name" style="margin-left: 10px; font-weight: bold;"></span>
     </div>
   </div>
 
@@ -63,6 +71,12 @@
         sigma.plugins.dragNodes(s, s.renderers[0]);
 
         let isRunning = true;
+        let layoutIndex = 0;
+        const layouts = ['fr', 'fa2', 'rotation'];
+
+        function updateLayoutLabel(name) {
+          document.getElementById('layout-name').textContent = name;
+        }
 
         function startFR() {
           sigma.layouts.fruchtermanReingold.configure(s, {
@@ -74,19 +88,77 @@
             strongGravityMode: false
           });
           sigma.layouts.fruchtermanReingold.start(s);
+          updateLayoutLabel('Fruchterman-Reingold');
+        }
+
+        function startFA2() {
+          s.startForceAtlas2({
+            linLogMode: false,
+            outboundAttractionDistribution: false,
+            adjustSizes: true,
+            edgeWeightInfluence: 1,
+            scalingRatio: 10,
+            strongGravityMode: false,
+            gravity: 1,
+            slowDown: 1
+          });
+          updateLayoutLabel('ForceAtlas2');
+        }
+
+        function stopFA2() {
+          if (s.isForceAtlas2Running && s.isForceAtlas2Running()) s.stopForceAtlas2();
+        }
+
+        function rotateLayout() {
+          s.graph.nodes().forEach(function(n) {
+            const angle = Math.PI / 180;
+            const cos = Math.cos(angle);
+            const sin = Math.sin(angle);
+            const x = n.x;
+            const y = n.y;
+            n.x = x * cos - y * sin;
+            n.y = x * sin + y * cos;
+          });
+          s.refresh();
+          updateLayoutLabel('Rotation');
+        }
+
+        function cycleLayouts() {
+          const layout = layouts[layoutIndex];
+          layoutIndex = (layoutIndex + 1) % layouts.length;
+
+          stopFA2();
+          sigma.layouts.fruchtermanReingold.stop();
+
+          if (layout === 'fr') startFR();
+          else if (layout === 'fa2') startFA2();
+          else if (layout === 'rotation') rotateLayout();
+
+          document.getElementById('layout-select').value = layout;
         }
 
         startFR();
 
         const interval = setInterval(() => {
-          if (isRunning) startFR();
+          if (isRunning) cycleLayouts();
         }, 6000);
 
         document.getElementById('toggle-layout').addEventListener('click', function() {
           isRunning = !isRunning;
           this.textContent = isRunning ? 'Stop Animation' : 'Start Animation';
-          if (!isRunning) sigma.layouts.fruchtermanReingold.stop();
-          else startFR();
+
+          if (!isRunning) {
+            stopFA2();
+            sigma.layouts.fruchtermanReingold.stop();
+          } else {
+            cycleLayouts();
+          }
+        });
+
+        document.getElementById('layout-select').addEventListener('change', function(e) {
+          const selected = e.target.value;
+          layoutIndex = layouts.indexOf(selected);
+          cycleLayouts();
         });
 
         s.bind('clickNode', function(e) {

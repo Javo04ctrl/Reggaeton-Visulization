@@ -65,43 +65,47 @@
 
         let isRunning = true;
 
-        // Gentle oscillation effect using Fruchterman-Reingold
-        function startWiggling() {
+        function startCentrifugalMotion() {
           sigma.layouts.fruchtermanReingold.configure(s, {
-            iterations: 200,
+            iterations: 500,
             easing: 'quadraticInOut',
-            duration: 10000,
-            barnesHutOptimize: false,
-            gravity: 0.1,
-            scalingRatio: 0.1
+            duration: 20000,
+            gravity: 0.01,
+            scalingRatio: 0.001,
+            slowDown: 10
           });
           sigma.layouts.fruchtermanReingold.start(s);
         }
 
-        startWiggling();
-        setInterval(startWiggling, 12000);
+        startCentrifugalMotion();
+        setInterval(startCentrifugalMotion, 22000);
 
         document.getElementById('toggle-layout').addEventListener('click', function() {
           if (isRunning) {
             sigma.layouts.fruchtermanReingold.stop();
             this.textContent = 'Start Animation';
           } else {
-            startWiggling();
+            startCentrifugalMotion();
             this.textContent = 'Stop Animation';
           }
           isRunning = !isRunning;
         });
 
-        s.bind('clickNode', function(e) {
-          var data = e.data.node;
-          var label = data.label || data.id;
-          document.getElementById('node-info').innerHTML = '<strong>' + label + '</strong>';
-          document.getElementById('node-info').style.display = 'block';
+        s.graph.edges().forEach(function(edge) {
+          const edgeLabel = edge.label || edge.attributes?.Collaborations || edge.id;
+          edge.label = edgeLabel;
         });
 
         document.getElementById('toggle-edge-labels').addEventListener('change', function(e) {
           s.settings('drawEdgeLabels', e.target.checked);
           s.refresh();
+        });
+
+        s.bind('clickNode', function(e) {
+          const data = e.data.node;
+          const label = data.label || data.id;
+          document.getElementById('node-info').innerHTML = '<strong>' + label + '</strong>';
+          document.getElementById('node-info').style.display = 'block';
         });
 
         s.refresh();
@@ -110,3 +114,4 @@
   </script>
 </body>
 </html>
+

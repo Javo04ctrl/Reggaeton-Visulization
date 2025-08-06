@@ -9,7 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/sigma.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.parsers.gexf.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.plugins.dragNodes.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.layout.forceAtlas2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.layout.fruchtermanReingold.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -65,29 +65,20 @@
 
         let isRunning = true;
 
-        // Start ForceAtlas2 layout
-        s.startForceAtlas2({
-          linLogMode: false,
-          outboundAttractionDistribution: false,
-          adjustSizes: true,
-          edgeWeightInfluence: 0,
-          scalingRatio: 10,
-          strongGravityMode: false,
-          gravity: 1,
-          slowDown: 1
+        // Start Fruchterman-Reingold layout
+        sigma.layouts.fruchtermanReingold.configure(s, {
+          iterations: 1000,
+          easing: 'quadraticInOut',
+          duration: 6000
         });
-
-        setTimeout(function() {
-          s.stopForceAtlas2();
-          isRunning = false;
-        }, 6000);
+        sigma.layouts.fruchtermanReingold.start(s);
 
         document.getElementById('toggle-layout').addEventListener('click', function() {
           if (isRunning) {
-            s.stopForceAtlas2();
+            sigma.layouts.fruchtermanReingold.stop();
             this.textContent = 'Start Animation';
           } else {
-            s.startForceAtlas2();
+            sigma.layouts.fruchtermanReingold.start(s);
             this.textContent = 'Stop Animation';
           }
           isRunning = !isRunning;

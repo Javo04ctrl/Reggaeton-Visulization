@@ -65,34 +65,38 @@
 
         let isRunning = true;
 
-        function startCentrifugalMotion() {
+        function startGentleAnimation() {
           sigma.layouts.fruchtermanReingold.configure(s, {
-            iterations: 500,
+            iterations: 200,
             easing: 'quadraticInOut',
-            duration: 20000,
-            gravity: 0.01,
-            scalingRatio: 0.001,
-            slowDown: 10
+            duration: 6000,
+            gravity: 0.5,
+            scalingRatio: 2,
+            strongGravityMode: true,
+            slowDown: 5
           });
           sigma.layouts.fruchtermanReingold.start(s);
         }
 
-        startCentrifugalMotion();
-        setInterval(startCentrifugalMotion, 22000);
+        startGentleAnimation();
+        const animInterval = setInterval(() => {
+          if (isRunning) startGentleAnimation();
+        }, 7000);
 
         document.getElementById('toggle-layout').addEventListener('click', function() {
           if (isRunning) {
             sigma.layouts.fruchtermanReingold.stop();
             this.textContent = 'Start Animation';
           } else {
-            startCentrifugalMotion();
+            startGentleAnimation();
             this.textContent = 'Stop Animation';
           }
           isRunning = !isRunning;
         });
 
+        // Correct edge label assignment from attributes
         s.graph.edges().forEach(function(edge) {
-          const edgeLabel = edge.label || edge.attributes?.Collaborations || edge.id;
+          const edgeLabel = edge.label || edge.attributes?.label || edge.attributes?.Label || edge.attributes?.Collaborations || edge.id;
           edge.label = edgeLabel;
         });
 
@@ -114,4 +118,3 @@
   </script>
 </body>
 </html>
-

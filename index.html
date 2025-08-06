@@ -9,6 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/sigma.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.parsers.gexf.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.plugins.dragNodes.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.layout.forceAtlas2.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.layout.fruchtermanReingold.min.js"></script>
 </head>
 <body>
@@ -63,40 +64,66 @@
       function(s) {
         sigma.plugins.dragNodes(s, s.renderers[0]);
 
-        // Connect drag behavior to connected nodes
-        const dragListener = s.graph.nodes().reduce((map, node) => {
-          map[node.id] = [];
-          return map;
-        }, {});
-
+        // Assign edge labels from attributes
         s.graph.edges().forEach(edge => {
-          dragListener[edge.source].push(edge.target);
-          dragListener[edge.target].push(edge.source);
+          edge.label = edge.label || edge.attributes?.Label || edge.attributes?.collaborations || edge.id;
         });
 
-        s.bind('drag', function(event) {
-          const node = event.data.node;
-          const dx = event.data.captor.clientX - (node['lastX'] || 0);
-          const dy = event.data.captor.clientY - (node['lastY'] || 0);
+        let isRunning = true;
+        let currentLayout = 'fr';
 
-          dragListener[node.id]?.forEach(neighborId => {
-            const neighbor = s.graph.nodes(neighborId);
-            if (neighbor && (typeof neighbor['x'] === 'number' && typeof neighbor['y'] === 'number')) {
-              neighbor.x += dx * 0.01;
-              neighbor.y += dy * 0.01;
-            }
+        function startFrLayout() {
+          sigma.layouts.fruchtermanReingold.configure(s, {
+            iterations: 100,
+            easing: 'quadraticInOut',
+            duration: 5000
           });
+          sigma.layouts.fruchtermanReingold.start(s);
+        }
 
-          node['lastX'] = event.data.captor.clientX;
-          node['lastY'] = event.data.captor.clientY;
+        function startFA2Layout() {
+          s.startForceAtlas2({
+            linLogMode: false,
+            outboundAttractionDistribution: false,
+            adjustSizes: true,
+            edgeWeightInfluence: 1,
+            scalingRatio: 10,
+            strongGravityMode: false,
+            gravity: 1,
+            slowDown: 1
+          });
+        }
 
-          s.refresh();
-        });
+        function stopFA2Layout() {
+          if (s.isForceAtlas2Running && s.isForceAtlas2Running()) s.stopForceAtlas2();
+        }
 
-        // Edge label fix
-        s.graph.edges().forEach(function(edge) {
-          const edgeLabel = edge.label || edge.attributes?.label || edge.attributes?.Label || edge.attributes?.Collaborations || edge.id;
-          edge.label = edgeLabel;
+        startFrLayout();
+
+        const interval = setInterval(() => {
+          if (!isRunning) return;
+
+          if (currentLayout === 'fr') {
+            stopFA2Layout();
+            startFA2Layout();
+            currentLayout = 'fa2';
+          } else {
+            stopFA2Layout();
+            startFrLayout();
+            currentLayout = 'fr';
+          }
+        }, 6000);
+
+        document.getElementById('toggle-layout').addEventListener('click', function() {
+          isRunning = !isRunning;
+          this.textContent = isRunning ? 'Stop Animation' : 'Start Animation';
+
+          if (!isRunning) {
+            stopFA2Layout();
+            sigma.layouts.fruchtermanReingold.stop();
+          } else {
+            currentLayout === 'fr' ? startFrLayout() : startFA2Layout();
+          }
         });
 
         document.getElementById('toggle-edge-labels').addEventListener('change', function(e) {
@@ -104,18 +131,8 @@
           s.refresh();
         });
 
-        document.getElementById('toggle-layout').addEventListener('click', function() {
-          if (s.isForceAtlas2Running && s.isForceAtlas2Running()) {
-            s.stopForceAtlas2();
-            this.textContent = 'Start Animation';
-          } else {
-            s.startForceAtlas2();
-            this.textContent = 'Stop Animation';
-          }
-        });
-
         s.bind('clickNode', function(e) {
-          const data = e.data.node;
+          const data = s.graph.nodes(e.data.node.id);
           const label = data.label || data.id;
           document.getElementById('node-info').innerHTML = '<strong>' + label + '</strong>';
           document.getElementById('node-info').style.display = 'block';
@@ -127,5 +144,6 @@
   </script>
 </body>
 </html>
+
 
 

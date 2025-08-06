@@ -9,7 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/sigma.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.parsers.gexf.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.plugins.dragNodes.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.layout.forceAtlas2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.layout.fruchtermanReingold.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -20,8 +20,7 @@
     <div id="graph-container" style="height: 90vh;"></div>
     <div id="node-info" style="position: absolute; top: 10px; right: 10px; background: #fff; border: 1px solid #ccc; padding: 10px; display: none;"></div>
     <div style="position: absolute; bottom: 20px; left: 20px; background: white; padding: 10px; border: 1px solid #ccc;">
-      <label><input type="checkbox" id="toggle-edge-labels"> Show Edge Labels</label>
-      <button id="toggle-layout" style="margin-left: 10px;">Toggle Animation</button>
+      <button id="toggle-layout">Toggle Animation</button>
     </div>
   </div>
 
@@ -65,32 +64,29 @@
 
         let isRunning = true;
 
-        // Start ForceAtlas2 layout
-        s.startForceAtlas2({
-          linLogMode: false,
-          outboundAttractionDistribution: false,
-          adjustSizes: true,
-          edgeWeightInfluence: 0,
-          scalingRatio: 10,
-          strongGravityMode: false,
-          gravity: 1,
-          slowDown: 1
-        });
+        function startFR() {
+          sigma.layouts.fruchtermanReingold.configure(s, {
+            iterations: 200,
+            easing: 'quadraticInOut',
+            duration: 5000,
+            gravity: 1,
+            scalingRatio: 5,
+            strongGravityMode: false
+          });
+          sigma.layouts.fruchtermanReingold.start(s);
+        }
 
-        setTimeout(function() {
-          s.stopForceAtlas2();
-          isRunning = false;
+        startFR();
+
+        const interval = setInterval(() => {
+          if (isRunning) startFR();
         }, 6000);
 
         document.getElementById('toggle-layout').addEventListener('click', function() {
-          if (isRunning) {
-            s.stopForceAtlas2();
-            this.textContent = 'Start Animation';
-          } else {
-            s.startForceAtlas2();
-            this.textContent = 'Stop Animation';
-          }
           isRunning = !isRunning;
+          this.textContent = isRunning ? 'Stop Animation' : 'Start Animation';
+          if (!isRunning) sigma.layouts.fruchtermanReingold.stop();
+          else startFR();
         });
 
         s.bind('clickNode', function(e) {
@@ -98,11 +94,6 @@
           var label = data.label || data.id;
           document.getElementById('node-info').innerHTML = '<strong>' + label + '</strong>';
           document.getElementById('node-info').style.display = 'block';
-        });
-
-        document.getElementById('toggle-edge-labels').addEventListener('change', function(e) {
-          s.settings('drawEdgeLabels', e.target.checked);
-          s.refresh();
         });
 
         s.refresh();

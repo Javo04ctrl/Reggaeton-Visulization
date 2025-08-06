@@ -63,38 +63,37 @@
       function(s) {
         sigma.plugins.dragNodes(s, s.renderers[0]);
 
-        let isRunning = true;
+        // Connect drag behavior to connected nodes
+        const dragListener = s.graph.nodes().reduce((map, node) => {
+          map[node.id] = [];
+          return map;
+        }, {});
 
-        function startGentleAnimation() {
-          sigma.layouts.fruchtermanReingold.configure(s, {
-            iterations: 200,
-            easing: 'quadraticInOut',
-            duration: 6000,
-            gravity: 0.5,
-            scalingRatio: 2,
-            strongGravityMode: true,
-            slowDown: 5
-          });
-          sigma.layouts.fruchtermanReingold.start(s);
-        }
-
-        startGentleAnimation();
-        const animInterval = setInterval(() => {
-          if (isRunning) startGentleAnimation();
-        }, 7000);
-
-        document.getElementById('toggle-layout').addEventListener('click', function() {
-          if (isRunning) {
-            sigma.layouts.fruchtermanReingold.stop();
-            this.textContent = 'Start Animation';
-          } else {
-            startGentleAnimation();
-            this.textContent = 'Stop Animation';
-          }
-          isRunning = !isRunning;
+        s.graph.edges().forEach(edge => {
+          dragListener[edge.source].push(edge.target);
+          dragListener[edge.target].push(edge.source);
         });
 
-        // Correct edge label assignment from attributes
+        s.bind('drag', function(event) {
+          const node = event.data.node;
+          const dx = event.data.captor.clientX - (node['lastX'] || 0);
+          const dy = event.data.captor.clientY - (node['lastY'] || 0);
+
+          dragListener[node.id]?.forEach(neighborId => {
+            const neighbor = s.graph.nodes(neighborId);
+            if (neighbor && (typeof neighbor['x'] === 'number' && typeof neighbor['y'] === 'number')) {
+              neighbor.x += dx * 0.01;
+              neighbor.y += dy * 0.01;
+            }
+          });
+
+          node['lastX'] = event.data.captor.clientX;
+          node['lastY'] = event.data.captor.clientY;
+
+          s.refresh();
+        });
+
+        // Edge label fix
         s.graph.edges().forEach(function(edge) {
           const edgeLabel = edge.label || edge.attributes?.label || edge.attributes?.Label || edge.attributes?.Collaborations || edge.id;
           edge.label = edgeLabel;
@@ -103,6 +102,16 @@
         document.getElementById('toggle-edge-labels').addEventListener('change', function(e) {
           s.settings('drawEdgeLabels', e.target.checked);
           s.refresh();
+        });
+
+        document.getElementById('toggle-layout').addEventListener('click', function() {
+          if (s.isForceAtlas2Running && s.isForceAtlas2Running()) {
+            s.stopForceAtlas2();
+            this.textContent = 'Start Animation';
+          } else {
+            s.startForceAtlas2();
+            this.textContent = 'Stop Animation';
+          }
         });
 
         s.bind('clickNode', function(e) {
@@ -118,3 +127,5 @@
   </script>
 </body>
 </html>
+
+

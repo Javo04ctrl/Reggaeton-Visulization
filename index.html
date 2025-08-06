@@ -21,14 +21,8 @@
     <div id="graph-container" style="height: 90vh;"></div>
     <div id="node-info" style="position: absolute; top: 10px; right: 10px; background: #fff; border: 1px solid #ccc; padding: 10px; display: none;"></div>
     <div style="position: absolute; bottom: 20px; left: 20px; background: white; padding: 10px; border: 1px solid #ccc;">
-      <label for="layout-select">Layout:</label>
-      <select id="layout-select">
-        <option value="fr">Fruchterman-Reingold</option>
-        <option value="fa2">ForceAtlas2</option>
-        <option value="rotation">Rotation</option>
-      </select>
       <button id="toggle-layout">Stop Animation</button>
-      <span id="layout-name" style="margin-left: 10px; font-weight: bold;"></span>
+      <button id="reset-layout">Reset Animation</button>
     </div>
   </div>
 
@@ -71,13 +65,7 @@
         sigma.plugins.dragNodes(s, s.renderers[0]);
 
         let isRunning = true;
-        let layoutIndex = 0;
-        const layouts = ['fr', 'fa2', 'rotation'];
         let layoutInterval;
-
-        function updateLayoutLabel(name) {
-          document.getElementById('layout-name').textContent = name;
-        }
 
         function startFR() {
           sigma.layouts.fruchtermanReingold.configure(s, {
@@ -89,7 +77,6 @@
             strongGravityMode: false
           });
           sigma.layouts.fruchtermanReingold.start(s);
-          updateLayoutLabel('Fruchterman-Reingold');
         }
 
         function startFA2() {
@@ -103,56 +90,32 @@
             gravity: 1,
             slowDown: 1
           });
-          updateLayoutLabel('ForceAtlas2');
         }
 
         function stopFA2() {
           if (s.isForceAtlas2Running && s.isForceAtlas2Running()) s.stopForceAtlas2();
         }
 
-        function rotateLayout() {
-          s.graph.nodes().forEach(function(n) {
-            const angle = Math.PI / 180;
-            const cos = Math.cos(angle);
-            const sin = Math.sin(angle);
-            const x = n.x;
-            const y = n.y;
-            n.x = x * cos - y * sin;
-            n.y = x * sin + y * cos;
-          });
-          s.refresh();
-          updateLayoutLabel('Rotation');
-        }
-
-        function runLayout(layout) {
+        function stopAllLayouts() {
           stopFA2();
           sigma.layouts.fruchtermanReingold.stop();
-          if (layout === 'fr') startFR();
-          else if (layout === 'fa2') startFA2();
-          else if (layout === 'rotation') rotateLayout();
-        }
-
-        function cycleLayouts() {
-          const layout = layouts[layoutIndex];
-          layoutIndex = (layoutIndex + 1) % layouts.length;
-          document.getElementById('layout-select').value = layout;
-          runLayout(layout);
         }
 
         function startAnimationCycle() {
           layoutInterval = setInterval(() => {
-            if (isRunning) cycleLayouts();
-          }, 6000);
+            stopAllLayouts();
+            startFA2();
+            setTimeout(() => {
+              stopAllLayouts();
+              startFR();
+            }, 5000);
+          }, 10000);
         }
 
         function stopAnimationCycle() {
           clearInterval(layoutInterval);
-          stopFA2();
-          sigma.layouts.fruchtermanReingold.stop();
+          stopAllLayouts();
         }
-
-        startFR();
-        startAnimationCycle();
 
         document.getElementById('toggle-layout').addEventListener('click', function() {
           isRunning = !isRunning;
@@ -161,11 +124,16 @@
           else startAnimationCycle();
         });
 
-        document.getElementById('layout-select').addEventListener('change', function(e) {
-          const selected = e.target.value;
-          layoutIndex = layouts.indexOf(selected);
-          runLayout(selected);
+        document.getElementById('reset-layout').addEventListener('click', function() {
+          stopAnimationCycle();
+          startFR();
+          startAnimationCycle();
+          isRunning = true;
+          document.getElementById('toggle-layout').textContent = 'Stop Animation';
         });
+
+        startFR();
+        startAnimationCycle();
 
         s.bind('clickNode', function(e) {
           var data = s.graph.nodes(e.data.node.id);
